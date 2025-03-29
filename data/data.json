@@ -33,19 +33,19 @@
     "name": "Darlan Tane",
     "title": "Data Analyst",
     "description": "Passionate about transforming data into actionable insights. With expertise in Python, SQL, and data visualization tools.",
-    "resumeLink": "#",
+    "resumeLink": "CV - Darlan Tane - Data analyst.pdf",
     "socialLinks": [
       {
         "name": "GitHub",
-        "url": "https://github.com/yourusername"
+        "url": "https://github.com/darlantane"
       },
       {
         "name": "LinkedIn",
-        "url": "https://linkedin.com/in/yourusername"
+        "url": "https://linkedin.com/in/darlan-tane/"
       },
       {
         "name": "Mail",
-        "url": "mailto:your.email@example.com"
+        "url": "mailto:darlan.tane@gmail.com"
       }
     ]
   },
@@ -68,7 +68,7 @@
     "journey": [
       {
         "title": "Discovering Data Analysis",
-        "description": "First exposure to data analysis during engineering studies"
+        "description": "First exposure to data analysis with R and python during engineering studies"
       },
       {
         "title": "Mastering Python & SQL",
@@ -76,7 +76,7 @@
       },
       {
         "title": "Business Intelligence",
-        "description": "Learned to create insightful dashboards with Power BI and Tableau"
+        "description": "Learned to create insightful dashboards with Power BI, Tableau and Looker studio"
       },
       {
         "title": "Machine Learning",
@@ -131,7 +131,7 @@
       "location": "Paris, France",
       "subjects": [
         "Python Programming: Data Exploration and Visualization (Pandas, Numpy, Seaborn, Matplotlib)",
-        "SQL: Data Queries and Modeling (Google Cloud Platform, Microsoft Azure)",
+        "SQL: Data Queries and Modeling (Google Cloud Platform, Microsoft Azure, Snowflake)",
         "Business Intelligence: Data Formatting, Exploration and Presentation (Power BI, Tableau, Looker Studio)",
         "Predictive Analysis and Machine Learning (Dataiku)"
       ]
@@ -145,7 +145,9 @@
       "subjects": [
         "Data Analysis and Biostatistics",
         "Food Production, Quality and Safety",
-        "Supply Chain and Logistics"
+        "Supply Chain and Logistics",
+        "agri-food product environment",
+        "Innovation and entrepreneurship"
       ]
     },
     {
@@ -155,10 +157,9 @@
       "period": "September 2018 - June 2020",
       "location": "Yaoundé, Cameroon",
       "subjects": [
-        "Advanced Mathematics and Physics",
         "Computer Science Fundamentals",
-        "Engineering Sciences",
-        "Intensive preparation for competitive entrance exams to top engineering schools"
+        "Biology and biochemistry",
+        "Geography, geology and Environment science"
       ]
     }
   ],
@@ -168,28 +169,35 @@
       "description": "Developed a machine learning model to predict KPI values in a production workshop",
       "type": "data-analysis",
       "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-      "link": "#"
+      "link": "https://github.com/darlantane/Productivity-prediction-program"
     },
     {
       "name": "Titanic Survival Prediction",
       "description": "Created a model to predict passenger survival on the Titanic using passenger data",
       "type": "data-analysis",
       "technologies": ["Python", "Pandas", "Numpy", "Scikit-learn"],
-      "link": "#"
+      "link": "https://github.com/darlantane/Jedha-Bootcamp-Essentials/tree/main/Titanic%20project"
     },
     {
       "name": "SuperStore Dashboard",
       "description": "Built an interactive dashboard to analyze sales and profitability of a superstore",
       "type": "data-analysis",
+      "technologies": ["Looker studio", "SQL", "Excel"],
+      "link": "https://github.com/darlantane/Jedha-bootcamp-Fullstack/tree/main/SuperStore"
+    },
+    {
+      "name": "Imdb_movies Dashboard",
+      "description": "Built an interactive dashboard to analyze successful movies on Imdb",
+      "type": "data-analysis",
       "technologies": ["Power BI", "SQL", "Excel"],
-      "link": "#"
+      "link": "https://github.com/darlantane/Jedha-bootcamp-Fullstack/tree/main/dataviz"
     },
     {
       "name": "MobyDoc Landing Page",
       "description": "Designed and developed a landing page for a fictional company on Hubspot",
       "type": "development",
       "technologies": ["JavaScript", "Hubspot", "HTML", "CSS"],
-      "link": "#"
+      "link": "https://github.com/darlantane/Jedha-bootcamp-Fullstack/tree/main/MobyDoc"
     }
   ],
   "skills": [
@@ -254,6 +262,11 @@
       "category": "Visualization Tools"
     },
     {
+      "name": "Matplotlib",
+      "level": 85,
+      "category": "Visualization Tools"
+    },
+    {
       "name": "Hubspot",
       "level": 70,
       "category": "Other"
@@ -261,50 +274,50 @@
     {
       "name": "VS Code",
       "level": 85,
-      "category": "Other"
+      "category": "Data Analysis Tools"
     }
   ],
   "certifications": [
     {
       "name": "Supervised Machine Learning",
       "issuer": "Coursera",
-      "date": "2024",
-      "link": "#"
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/CRK3WQJG979B"
     },
     {
       "name": "Advanced Learning Algorithms",
       "issuer": "Coursera",
-      "date": "2024",
-      "link": "#"
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/25MCU3PM9NTS"
     },
     {
       "name": "Neural Networks and Deep Learning",
       "issuer": "Coursera",
       "date": "2023",
-      "link": "#"
+      "link": "https://www.coursera.org/account/accomplishments/certificate/SJ6GTTZKH5MM"
     },
     {
       "name": "Unsupervised Machine Learning",
       "issuer": "Coursera",
       "date": "2023",
-      "link": "#"
+      "link": "https://www.coursera.org/account/accomplishments/certificate/9QH32LDL4LZ2"
     },
     {
       "name": "Data Visualization in Power BI",
-      "issuer": "Microsoft",
+      "issuer": "Coursera",
       "date": "2023",
-      "link": "#"
+      "link": "https://www.coursera.org/account/accomplishments/certificate/JU4VMBT82S7H"
     },
     {
       "name": "SQL for Data Science",
-      "issuer": "DataCamp",
+      "issuer": "Coursera",
       "date": "2022",
-      "link": "#"
+      "link": "https://www.coursera.org/account/accomplishments/certificate/3JPPGBSUKEL4"
     }
   ],
   "contact": {
-    "email": "darlan.tane@example.com",
-    "phone": "+33 6 12 34 56 78",
+    "email": "darlan.tane@gmail.com",
+    "phone": "+33 6 09 34 00 20",
     "location": "Paris, France",
     "description": "Interested in collaborating or have a project in mind? Feel free to reach out to me using the contact form or through my email or phone."
   },
@@ -313,15 +326,15 @@
     "socialLinks": [
       {
         "name": "GitHub",
-        "url": "https://github.com/yourusername"
+        "url": "https://github.com/darlantane"
       },
       {
         "name": "LinkedIn",
-        "url": "https://linkedin.com/in/yourusername"
+        "url": "https://linkedin.com/in/darlan-tane/"
       },
       {
         "name": "Mail",
-        "url": "mailto:darlan.tane@example.com"
+        "url": "mailto:darlan.tane@gmail.com"
       }
     ]
   }
