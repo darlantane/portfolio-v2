@@ -44,6 +44,7 @@ export default function Skills() {
     Tableau: "/logos/tableau.svg",
     "Looker Studio": "/logos/looker.svg",
     Seaborn: "/logos/seaborn.svg",
+    Matplotlib: "/logos/matplotlib.png",
     Hubspot: "/logos/hubspot.svg",
     "VS Code": "/logos/vscode.svg",
   }
