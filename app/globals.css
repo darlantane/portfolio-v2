@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 0 0% 21%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 21%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 21%;
+    --primary: 90 65% 41%;
+    --primary-foreground: 0 0% 96%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 21%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 90 65% 41%;
+    --accent-foreground: 0 0% 21%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 90 65% 41%;
+    --radius: 0.25rem; /* Reduced from 0.5rem to 0.25rem for sharper corners */
+
+    /* Custom colors for different skill categories */
+    --blue-500: 213 94% 68%;
+    --green-500: 90 65% 41%;
+    --purple-500: 270 61% 71%;
+    --amber-500: 39 100% 50%;
+
+    /* Font family */
+    --font-space: "Space Grotesk", sans-serif;
+  }
+
+  .dark {
+    --background: 0 0% 17%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 16%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 90 65% 41%;
+    --primary-foreground: 0 0% 17%;
+    --secondary: 0 0% 21%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 21%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 90 65% 41%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 90 65% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-space);
+  }
+}
+
+/* Tech-inspired styles */
+.tech-card {
+  @apply relative overflow-hidden border border-primary/30 bg-gradient-to-br from-card to-card/80;
+  box-shadow: 0 0 15px rgba(113, 176, 35, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.25rem; /* Sharper corners */
+}
+
+.tech-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, hsl(var(--primary)), transparent);
+}
+
+.tech-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid hsl(var(--primary));
+  border-left: 2px solid hsl(var(--primary));
+}
+
+.tech-section {
+  @apply relative;
+}
+
+.tech-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 10% 20%, rgba(113, 176, 35, 0.03) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(113, 176, 35, 0.03) 0%, transparent 20%),
+    linear-gradient(to right, rgba(113, 176, 35, 0.01) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(113, 176, 35, 0.01) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.tech-heading {
+  @apply relative inline-flex items-center;
+}
+
+.tech-heading::before {
+  content: "";
+  @apply absolute -left-4 h-full w-1 bg-primary;
+}
+
+.tech-badge {
+  @apply relative overflow-hidden bg-secondary/50 text-secondary-foreground;
+  backdrop-filter: blur(5px);
+  border-radius: 0.25rem; /* Sharper corners */
+}
+
+.tech-badge::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(113, 176, 35, 0.2), transparent);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.tech-button {
+  @apply relative overflow-hidden;
+  border-radius: 0.25rem; /* Sharper corners */
+}
+
+.tech-button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  transform: rotate(30deg);
+  transition: transform 0.3s ease;
+}
+
+.tech-button:hover::after {
+  transform: rotate(30deg) translate(10%, 10%);
+}
+
+.circuit-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20 L80 20 L80 30 L30 30 L30 80 L20 80 Z' stroke='rgba(113, 176, 35, 0.1)' fill='none' stroke-width='1'/%3E%3Cpath d='M50 20 L50 80' stroke='rgba(113, 176, 35, 0.1)' fill='none' stroke-width='1'/%3E%3Ccircle cx='50' cy='50' r='3' fill='rgba(113, 176, 35, 0.1)'/%3E%3Ccircle cx='80' cy='30' r='3' fill='rgba(113, 176, 35, 0.1)'/%3E%3Ccircle cx='20' cy='80' r='3' fill='rgba(113, 176, 35, 0.1)'/%3E%3C/svg%3E");
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(113, 176, 35, 0.5);
+}
+
+.tech-timeline-item {
+  @apply relative pl-8 pb-10;
+}
+
+.tech-timeline-item::before {
+  content: "";
+  @apply absolute left-0 top-0 h-full w-0.5 bg-primary/30;
+}
+
+.tech-timeline-item::after {
+  content: "";
+  @apply absolute left-0 top-2 h-4 w-4 -translate-x-1.5 rounded-full border-2 border-primary bg-background;
+}
+
+.tech-timeline-item:last-child {
+  @apply pb-0;
+}
+
+.tech-timeline-item:last-child::before {
+  @apply h-8;
+}
+
+/* Active nav indicator */
+.nav-link {
+  @apply relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary;
+  display: none; /* Hide this since we're using the span for the underline */
+}
+

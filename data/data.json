@@ -1,0 +1,329 @@
+{
+  "navLinks": [
+    {
+      "id": "about",
+      "text": "About"
+    },
+    {
+      "id": "education",
+      "text": "Education"
+    },
+    {
+      "id": "experience",
+      "text": "Experience"
+    },
+    {
+      "id": "projects",
+      "text": "Projects"
+    },
+    {
+      "id": "skills",
+      "text": "Skills"
+    },
+    {
+      "id": "certifications",
+      "text": "Certifications"
+    },
+    {
+      "id": "contact",
+      "text": "Contact"
+    }
+  ],
+  "hero": {
+    "name": "Darlan Tane",
+    "title": "Data Analyst",
+    "description": "Passionate about transforming data into actionable insights. With expertise in Python, SQL, and data visualization tools.",
+    "resumeLink": "#",
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/yourusername"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/yourusername"
+      },
+      {
+        "name": "Mail",
+        "url": "mailto:your.email@example.com"
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I am a passionate data analyst with a background in engineering and a strong focus on turning complex data into clear, actionable insights. I specialize in using Python, SQL, and various data visualization tools to solve business problems and improve decision-making processes.",
+      "My journey in data began during my engineering studies, where I discovered my passion for statistical analysis and data-driven decision making. Since then, I've expanded my skills to include machine learning techniques, business intelligence tools, and data visualization platforms."
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "Fluent"
+      },
+      {
+        "name": "French",
+        "level": "Native"
+      }
+    ],
+    "interests": ["Illustration Drawing", "Improvisation Theatre"],
+    "journey": [
+      {
+        "title": "Discovering Data Analysis",
+        "description": "First exposure to data analysis during engineering studies"
+      },
+      {
+        "title": "Mastering Python & SQL",
+        "description": "Developed strong coding skills for data manipulation"
+      },
+      {
+        "title": "Business Intelligence",
+        "description": "Learned to create insightful dashboards with Power BI and Tableau"
+      },
+      {
+        "title": "Machine Learning",
+        "description": "Expanded skill set to include predictive analytics"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "title": "Supply Chain Manager",
+      "company": "LA MATER INC.",
+      "location": "Paris, France",
+      "period": "May 2024 - November 2024",
+      "responsibilities": [
+        "Collected, cleaned and analyzed historical data using dashboards to anticipate demand peaks, price variations, and quarterly transportation costs",
+        "Optimized goods routing by 30% through analysis of delivery reports and real-time tracking of merchandise",
+        "Collaborated with cross-functional teams to improve supply chain efficiency"
+      ],
+      "logo": "logos/lamater.png"
+    },
+    {
+      "title": "Production Manager",
+      "company": "SAINTE LUCIE",
+      "location": "Creil, France",
+      "period": "February 2023 - September 2023",
+      "responsibilities": [
+        "Analyzed production line performance indicators (KPIs) using Deep Learning to predict performance values",
+        "Created 25 work instruction documents, ensuring operators' skill advancement in production activities",
+        "Planned production schedules based on human and material resources availability"
+      ],
+      "logo": "logos/saintelucie.png"
+    },
+    {
+      "title": "Production Line Analyst",
+      "company": "KUMOFOODS",
+      "location": "Draveil, France",
+      "period": "April 2022 - August 2022",
+      "responsibilities": [
+        "Optimized production costs by 20% using an R algorithm to estimate costs and correlate them with KPIs",
+        "Initiated continuous improvement plans (5S) based on data analysis",
+        "Managed production flows and organized production teams"
+      ],
+      "logo": "logos/kumo.png"
+    }
+  ],
+  "education": [
+    {
+      "school": "JEDHA Bootcamp",
+      "logo": "logos/jedha.svg",
+      "degree": "Data Science Developer",
+      "period": "January 2025 - April 2025",
+      "location": "Paris, France",
+      "subjects": [
+        "Python Programming: Data Exploration and Visualization (Pandas, Numpy, Seaborn, Matplotlib)",
+        "SQL: Data Queries and Modeling (Google Cloud Platform, Microsoft Azure)",
+        "Business Intelligence: Data Formatting, Exploration and Presentation (Power BI, Tableau, Looker Studio)",
+        "Predictive Analysis and Machine Learning (Dataiku)"
+      ]
+    },
+    {
+      "school": "UniLaSalle",
+      "logo": "logos/unilasalle.svg",
+      "degree": "Engineering Degree",
+      "period": "September 2020 - September 2023",
+      "location": "Rouen, France",
+      "subjects": [
+        "Data Analysis and Biostatistics",
+        "Food Production, Quality and Safety",
+        "Supply Chain and Logistics"
+      ]
+    },
+    {
+      "school": "PrépaVogt",
+      "logo": "logos/prepavogt.svg",
+      "degree": "Intensive Preparatory Program for Engineering Schools",
+      "period": "September 2018 - June 2020",
+      "location": "Yaoundé, Cameroon",
+      "subjects": [
+        "Advanced Mathematics and Physics",
+        "Computer Science Fundamentals",
+        "Engineering Sciences",
+        "Intensive preparation for competitive entrance exams to top engineering schools"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Productivity Prediction Program",
+      "description": "Developed a machine learning model to predict KPI values in a production workshop",
+      "type": "data-analysis",
+      "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      "link": "#"
+    },
+    {
+      "name": "Titanic Survival Prediction",
+      "description": "Created a model to predict passenger survival on the Titanic using passenger data",
+      "type": "data-analysis",
+      "technologies": ["Python", "Pandas", "Numpy", "Scikit-learn"],
+      "link": "#"
+    },
+    {
+      "name": "SuperStore Dashboard",
+      "description": "Built an interactive dashboard to analyze sales and profitability of a superstore",
+      "type": "data-analysis",
+      "technologies": ["Power BI", "SQL", "Excel"],
+      "link": "#"
+    },
+    {
+      "name": "MobyDoc Landing Page",
+      "description": "Designed and developed a landing page for a fictional company on Hubspot",
+      "type": "development",
+      "technologies": ["JavaScript", "Hubspot", "HTML", "CSS"],
+      "link": "#"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": 90,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "SQL",
+      "level": 85,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "R",
+      "level": 75,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "JavaScript",
+      "level": 60,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "Pandas",
+      "level": 90,
+      "category": "Data Analysis Tools"
+    },
+    {
+      "name": "NumPy",
+      "level": 85,
+      "category": "Data Analysis Tools"
+    },
+    {
+      "name": "Excel",
+      "level": 95,
+      "category": "Data Analysis Tools"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "level": 90,
+      "category": "Data Analysis Tools"
+    },
+    {
+      "name": "Power BI",
+      "level": 85,
+      "category": "Visualization Tools"
+    },
+    {
+      "name": "Tableau",
+      "level": 80,
+      "category": "Visualization Tools"
+    },
+    {
+      "name": "Looker Studio",
+      "level": 75,
+      "category": "Visualization Tools"
+    },
+    {
+      "name": "Seaborn",
+      "level": 85,
+      "category": "Visualization Tools"
+    },
+    {
+      "name": "Hubspot",
+      "level": 70,
+      "category": "Other"
+    },
+    {
+      "name": "VS Code",
+      "level": 85,
+      "category": "Other"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Supervised Machine Learning",
+      "issuer": "Coursera",
+      "date": "2024",
+      "link": "#"
+    },
+    {
+      "name": "Advanced Learning Algorithms",
+      "issuer": "Coursera",
+      "date": "2024",
+      "link": "#"
+    },
+    {
+      "name": "Neural Networks and Deep Learning",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "#"
+    },
+    {
+      "name": "Unsupervised Machine Learning",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "#"
+    },
+    {
+      "name": "Data Visualization in Power BI",
+      "issuer": "Microsoft",
+      "date": "2023",
+      "link": "#"
+    },
+    {
+      "name": "SQL for Data Science",
+      "issuer": "DataCamp",
+      "date": "2022",
+      "link": "#"
+    }
+  ],
+  "contact": {
+    "email": "darlan.tane@example.com",
+    "phone": "+33 6 12 34 56 78",
+    "location": "Paris, France",
+    "description": "Interested in collaborating or have a project in mind? Feel free to reach out to me using the contact form or through my email or phone."
+  },
+  "footer": {
+    "copyright": "© 2025 Darlan Tane. All rights reserved.",
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/yourusername"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/yourusername"
+      },
+      {
+        "name": "Mail",
+        "url": "mailto:darlan.tane@example.com"
+      }
+    ]
+  }
+}
+
