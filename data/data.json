@@ -172,6 +172,13 @@
       "link": "https://github.com/darlantane/Productivity-prediction-program"
     },
     {
+      "name": "Best-selling_video_games analysis",
+      "description": "Determined parameters behind a video game's success by collecting, processing and analyzing a database, and creating dashboards",
+      "type": "data-analysis",
+      "technologies": ["SQL","Python", "Pandas", "Power BI", "Excel"],
+      "link": "https://github.com/darlantane/jedha_bootcamp_fullstack_final_project"
+    },
+    {
       "name": "Titanic Survival Prediction",
       "description": "Created a model to predict passenger survival on the Titanic using passenger data",
       "type": "data-analysis",
