@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, GitlabIcon as GitHub, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import data from "@/data/data.json"
 import DataVisualization from "./data-visualization"
 
@@ -91,7 +91,7 @@ export default function Hero() {
                 className="text-muted-foreground hover:text-primary transition-colors relative group"
                 aria-label={link.name}
               >
-                {link.name === "GitHub" && <GitHub className="h-6 w-6" />}
+                {link.name === "GitHub" && <Github className="h-6 w-6" />}
                 {link.name === "LinkedIn" && <Linkedin className="h-6 w-6" />}
                 {link.name === "Mail" && <Mail className="h-6 w-6" />}
                 <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>

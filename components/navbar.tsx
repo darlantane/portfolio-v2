@@ -1,12 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, use } from "react"
 import { Menu, X, Sun, Moon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import data from "@/data/data.json"
+import { redirect, usePathname, useSearchParams } from "next/navigation"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -16,6 +17,10 @@ export default function Navbar() {
   // Update the navbar component to include active section indicator
   // First, add a state to track the active section
   const [activeSection, setActiveSection] = useState("")
+
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const anchor = searchParams.get("anchor")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +44,7 @@ export default function Navbar() {
     }
 
     window.addEventListener("scroll", handleScroll)
+    handleScroll() // Call once to set initial state
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
@@ -59,6 +65,27 @@ export default function Navbar() {
     })
   }
 
+  const handleClick = (linkId: string) => {
+    if(['articles'].includes(linkId)){
+      redirect(`/${linkId}`)
+    } else {
+      if (pathname !== "/") {
+        redirect(`/?anchor=${linkId}`)
+      } 
+      scrollToSection(linkId)
+    }
+  }
+
+  useEffect(() => {
+    if (anchor) {
+      const element = document.getElementById(anchor)
+      if (element) {
+        scrollToSection(anchor)
+        window.history.pushState({}, '', pathname);
+      }
+    }
+  }, [anchor])
+
   return (
     <>
       <motion.nav
@@ -71,11 +98,13 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <a
-            href="#"
+            href="/"
             className="text-xl font-bold tracking-tighter"
             onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: "smooth" })
+              if (pathname === "/") {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }
             }}
           >
             <Image src="/favicon.ico" alt="DT Logo" width={40} height={40} className="h-10 w-auto" />
@@ -86,7 +115,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <button
                 key={link.id}
-                onClick={() => scrollToSection(link.id)}
+                onClick={() => handleClick(link.id)}
                 className={`text-foreground/80 hover:text-primary transition-colors relative nav-link ${
                   activeSection === link.id ? "active text-primary" : ""
                 }`}
