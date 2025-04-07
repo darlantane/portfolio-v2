@@ -172,6 +172,13 @@
       "link": "https://github.com/darlantane/Productivity-prediction-program"
     },
     {
+      "name": "Startup's profitability",
+      "description": "Created a model to predict startups profitability",
+      "type": "data-analysis",
+      "technologies": ["Python", "Pandas", "Scikit-learn", "Excel"],
+      "link": "https://github.com/darlantane/startup_profitability"
+    },
+    {
       "name": "Best-selling_video_games analysis",
       "description": "Determined parameters behind a video game's success by collecting, processing and analyzing a database, and creating dashboards",
       "type": "data-analysis",
@@ -183,28 +190,35 @@
       "description": "Created a model to predict passenger survival on the Titanic using passenger data",
       "type": "data-analysis",
       "technologies": ["Python", "Pandas", "Numpy", "Scikit-learn"],
-      "link": "https://github.com/darlantane/Jedha-Bootcamp-Essentials/tree/main/Titanic%20project"
+      "link": "https://github.com/darlantane/titanic_project"
     },
     {
       "name": "SuperStore Dashboard",
       "description": "Built an interactive dashboard to analyze sales and profitability of a superstore",
       "type": "data-analysis",
       "technologies": ["Looker studio", "SQL", "Excel"],
-      "link": "https://github.com/darlantane/Jedha-bootcamp-Fullstack/tree/main/SuperStore"
+      "link": "https://github.com/darlantane/superstore_dashboard"
+    },
+    {
+      "name": "Road accidents",
+      "description": "Determined parameters behind road accidents",
+      "type": "data-analysis",
+      "technologies": ["Python", "Pandas", "Numpy", "Excel"],
+      "link": "https://github.com/darlantane/road_accidents"
     },
     {
       "name": "Imdb_movies Dashboard",
       "description": "Built an interactive dashboard to analyze successful movies on Imdb",
       "type": "data-analysis",
       "technologies": ["Power BI", "SQL", "Excel"],
-      "link": "https://github.com/darlantane/Jedha-bootcamp-Fullstack/tree/main/dataviz"
+      "link": "https://github.com/darlantane/imdb_movies_dashboard"
     },
     {
       "name": "MobyDoc Landing Page",
       "description": "Designed and developed a landing page for a fictional company on Hubspot",
       "type": "development",
       "technologies": ["JavaScript", "Hubspot", "HTML", "CSS"],
-      "link": "https://github.com/darlantane/Jedha-bootcamp-Fullstack/tree/main/MobyDoc"
+      "link": "https://github.com/darlantane/mobydoc_landing_page"
     }
   ],
   "skills": [
