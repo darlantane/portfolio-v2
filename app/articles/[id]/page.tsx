@@ -80,7 +80,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="h-4 w-4 text-primary" />
-                <span>5 min read</span>
+                <span>{article.readingTime} read</span>
               </div>
             </div>
 

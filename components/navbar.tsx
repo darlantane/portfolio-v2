@@ -1,90 +1,90 @@
-"use client"
+"use client";
 
-import { useState, useEffect, use } from "react"
-import { Menu, X, Sun, Moon } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useTheme } from "next-themes"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import data from "@/data/data.json"
-import { redirect, usePathname, useSearchParams } from "next/navigation"
+import { useState, useEffect, use, Suspense } from "react";
+import { Menu, X, Sun, Moon, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import data from "@/data/data.json";
+import { redirect, usePathname, useSearchParams } from "next/navigation";
 
-export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
-  const { navLinks } = data
+function NavbarComponent() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const { navLinks } = data;
   // Update the navbar component to include active section indicator
   // First, add a state to track the active section
-  const [activeSection, setActiveSection] = useState("")
+  const [activeSection, setActiveSection] = useState("");
 
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-  const anchor = searchParams.get("anchor")
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const anchor = searchParams.get("anchor");
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
 
       // Determine which section is currently in view
-      const sections = navLinks.map((link) => document.getElementById(link.id))
-      const scrollPosition = window.scrollY + 100 // Offset for better detection
+      const sections = navLinks.map((link) => document.getElementById(link.id));
+      const scrollPosition = window.scrollY + 100; // Offset for better detection
 
       for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i]
+        const section = sections[i];
         if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(navLinks[i].id)
-          break
+          setActiveSection(navLinks[i].id);
+          break;
         }
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    handleScroll() // Call once to set initial state
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Call once to set initial state
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [navLinks])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [navLinks]);
 
   const scrollToSection = (id: string) => {
-    setMobileMenuOpen(false)
-    const element = document.getElementById(id)
-    const offset = 80
-    const bodyRect = document.body.getBoundingClientRect().top
-    const elementRect = element?.getBoundingClientRect().top ?? 0
-    const elementPosition = elementRect - bodyRect
-    const offsetPosition = elementPosition - offset
+    setMobileMenuOpen(false);
+    const element = document.getElementById(id);
+    const offset = 80;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = element?.getBoundingClientRect().top ?? 0;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
 
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   const handleClick = (linkId: string) => {
-    if(['articles'].includes(linkId)){
-      redirect(`/${linkId}`)
+    if (["articles"].includes(linkId)) {
+      redirect(`/${linkId}`);
     } else {
       if (pathname !== "/") {
-        redirect(`/?anchor=${linkId}`)
-      } 
-      scrollToSection(linkId)
+        redirect(`/?anchor=${linkId}`);
+      }
+      scrollToSection(linkId);
     }
-  }
+  };
 
   useEffect(() => {
     if (anchor) {
-      const element = document.getElementById(anchor)
+      const element = document.getElementById(anchor);
       if (element) {
-        scrollToSection(anchor)
-        window.history.pushState({}, '', pathname);
+        scrollToSection(anchor);
+        window.history.pushState({}, "", pathname);
       }
     }
-  }, [anchor])
+  }, [anchor]);
 
   return (
     <>
@@ -93,7 +93,9 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-background/80 backdrop-blur-md shadow-md py-2" : "bg-transparent py-4"
+          isScrolled
+            ? "bg-background/80 backdrop-blur-md shadow-md py-2"
+            : "bg-transparent py-4"
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -102,12 +104,18 @@ export default function Navbar() {
             className="text-xl font-bold tracking-tighter"
             onClick={(e) => {
               if (pathname === "/") {
-                e.preventDefault()
-                window.scrollTo({ top: 0, behavior: "smooth" })
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }
             }}
           >
-            <Image src="/favicon.ico" alt="DT Logo" width={40} height={40} className="h-10 w-auto" />
+            <Image
+              src="/favicon.ico"
+              alt="DT Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Desktop menu */}
@@ -123,7 +131,9 @@ export default function Navbar() {
                 {link.text}
                 <span
                   className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
-                    activeSection === link.id ? "w-full" : "w-0 group-hover:w-full"
+                    activeSection === link.id
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
                   }`}
                 ></span>
               </button>
@@ -135,7 +145,11 @@ export default function Navbar() {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="tech-button"
             >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {theme === "dark" ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
             </Button>
           </div>
 
@@ -148,10 +162,23 @@ export default function Navbar() {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="tech-button"
             >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {theme === "dark" ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
             </Button>
-            <Button variant="ghost" size="icon" aria-label="Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Menu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -172,7 +199,9 @@ export default function Navbar() {
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
                 className={`py-2 text-left transition-colors ${
-                  activeSection === link.id ? "text-primary" : "text-foreground/80 hover:text-primary"
+                  activeSection === link.id
+                    ? "text-primary"
+                    : "text-foreground/80 hover:text-primary"
                 }`}
               >
                 {link.text}
@@ -182,6 +211,19 @@ export default function Navbar() {
         </motion.div>
       )}
     </>
-  )
+  );
 }
 
+export default function Navbar() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center">
+          <Loader2 className="h-8 w-8 text-primary animate-spin" />
+        </div>
+      }
+    >
+      <NavbarComponent />
+    </Suspense>
+  );
+}
