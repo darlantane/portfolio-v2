@@ -193,6 +193,13 @@
       "link": "https://github.com/darlantane/titanic_project"
     },
     {
+      "name": "Air_Pollution",
+      "description": "Analysed parameters behind air pollution in USA",
+      "type": "data-analysis",
+      "technologies": ["Python", "Pandas", "Numpy", "Scikit-learn"],
+      "link": "https://github.com/darlantane/air_pollution"
+    },
+    {
       "name": "SuperStore Dashboard",
       "description": "Built an interactive dashboard to analyze sales and profitability of a superstore",
       "type": "data-analysis",
@@ -299,6 +306,12 @@
     }
   ],
   "certifications": [
+    {
+      "name": "Data Essentials - Jedha Bootcamp",
+      "issuer": "Jedha",
+      "date": "2025",
+      "link": "https://www.credential.net/641ee8db-401b-45d9-872b-f335943503fd#acc.IN16kz7g"
+    },
     {
       "name": "Supervised Machine Learning",
       "issuer": "Coursera",
