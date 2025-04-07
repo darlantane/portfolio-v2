@@ -27,6 +27,10 @@
     {
       "id": "contact",
       "text": "Contact"
+    },
+    {
+      "id": "articles",
+      "text": "Articles"
     }
   ],
   "hero": {
@@ -371,6 +375,68 @@
         "url": "mailto:darlan.tane@gmail.com"
       }
     ]
-  }
+  },
+  "articles": [
+    {
+      "id": 1,
+      "title": "🚀 Can we predict a startup's profitability based on key business factors?",
+      "image": "/articles/covers/startup-profitability.png",
+      "description": "How key business factors like R&D and marketing influence startup profitability through a predictive regression model?",
+      "mdLink": "articles/startup-profitability.md",
+      "gitHubLink": "https://github.com/darlantane/startup_profitability",
+      "date": "2025-02-10",
+      "author": "Darlan Tane",
+      "readingTime": "4 min",
+      "relatedArticleIds": [2, 3]
+    },
+    {
+      "id": 2,
+      "title": "🚢 Predicting Titanic Survivors with Machine Learning",
+      "image": "/articles/covers/titanic-survivors.png",
+      "description": "Predict who survived the Titanic disaster using machine learning and data visualization.",
+      "mdLink": "articles/titanic-survivors.md",
+      "gitHubLink": "https://github.com/darlantane/titanic_project",
+      "date": "2025-02-17",
+      "author": "Darlan Tane",
+      "readingTime": "4 min",
+      "relatedArticleIds": [1, 3]
+    },
+    {
+      "id": 3,
+      "title": "🌍 Can We Predict Air Pollution Levels in the US with Machine Learning?",
+      "image": "/articles/covers/air-pollution.png",
+      "description": "Can we use machine learning to forecast pollution levels in US cities? This project explores the limits of data and modeling in environmental prediction.",
+      "mdLink": "articles/air-pollution.md",
+      "gitHubLink": "https://github.com/darlantane/air_pollution",
+      "date": "2025-02-25",
+      "author": "Darlan Tane",
+      "readingTime": "5 min",
+      "relatedArticleIds": [2, 4]
+    },
+    {
+      "id": 4,
+      "title": "🚨 No Appointments Available! Meet MobyDoc",
+      "image": "/articles/covers/mobydoc.png",
+      "description": "MobyDoc: A fictional startup designed to solve urgent medical appointment scheduling with a real-world landing page and analytics setup.",
+      "mdLink": "articles/mobydoc.md",
+      "gitHubLink": "https://github.com/darlantane/mobydoc_landing_page",
+      "date": "2025-03-06",
+      "author": "Darlan Tane",
+      "readingTime": "4 min",
+      "relatedArticleIds": [3, 5]
+    },
+    {
+      "id": 5,
+      "title": "🎬 Unlocking the Secrets of Box Office Success: A Power BI Film Analysis",
+      "image": "/articles/covers/imdb-films.png",
+      "description": "Bridging the gap between theoretical machine learning concepts and their practical applications in real-world scenarios.",
+      "mdLink": "articles/imdb-films.md",
+      "gitHubLink": "https://github.com/darlantane/imdb_movies_dashboard",
+      "date": "2025-04-02",
+      "author": "Darlan Tane",
+      "readingTime": "5 min",
+      "relatedArticleIds": [3, 4]
+    }
+  ]
 }
 
