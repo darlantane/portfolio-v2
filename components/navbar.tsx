@@ -197,7 +197,7 @@ function NavbarComponent() {
             {navLinks.map((link) => (
               <button
                 key={link.id}
-                onClick={() => scrollToSection(link.id)}
+                onClick={() => handleClick(link.id)}
                 className={`py-2 text-left transition-colors ${
                   activeSection === link.id
                     ? "text-primary"
