@@ -72,19 +72,19 @@
     "journey": [
       {
         "title": "Discovering Data Analysis",
-        "description": "First exposure to data analysis with R and python during engineering studies"
+        "description": "First exposure to data analysis with R and python during my engineering studies and my internship projects at Kumofoods and Sainte Lucie: Production costs optimization using an R language algorithm, and line performance indicators (KPIs) analysis using a Deep Learning program"
       },
       {
         "title": "Mastering Python & SQL",
-        "description": "Developed strong coding skills for data manipulation"
+        "description": "Developed strong coding skills for data manipulation through projects at Jedha : Air_pollution, Titanic survival pollution, Startup's profitability"
       },
       {
         "title": "Business Intelligence",
-        "description": "Learned to create insightful dashboards with Power BI, Tableau and Looker studio"
+        "description": "Learned to create insightful dashboards with Power BI, Tableau and Looker studio at Jedha with projects like an Imdb_movies dashboard, and a SuperStore Dashboard"
       },
       {
         "title": "Machine Learning",
-        "description": "Expanded skill set to include predictive analytics"
+        "description": "Expanded skill set to include predictive analytics through certifications at Coursera"
       }
     ]
   },
