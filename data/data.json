@@ -435,7 +435,18 @@
       "date": "2025-04-02",
       "author": "Darlan Tane",
       "readingTime": "5 min",
-      "relatedArticleIds": [3, 4]
+      "relatedArticleIds": [4, 6]
+    },
+    {
+      "id": 6,
+      "title": "🧘‍♂️ Mastering Git & GitHub basics as a Data Analyst",
+      "image": "/articles/covers/mastering-git.png",
+      "description": "How I moved beyond the basics of Git and GitHub to truly understand version control—and why it’s now an essential part of my data analyst toolkit.",
+      "mdLink": "articles/mastering-git.md",
+      "date": "2025-04-11",
+      "author": "Darlan Tane",
+      "readingTime": "6 min",
+      "relatedArticleIds": [4, 5]
     }
   ]
 }
