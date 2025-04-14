@@ -37,7 +37,7 @@
     "name": "Darlan Tane",
     "title": "Data Analyst, Agronomy and agro-industry engineer",
     "description": "Passionate about transforming data into actionable insights. With expertise in Python, SQL, and data visualization tools.",
-    "resumeLink": "logos/CV - Darlan Tane - Data analyst.pdf",
+    "resumeLink": "documents/CV - Darlan Tane - Data analyst.pdf",
     "socialLinks": [
       {
         "name": "GitHub",
@@ -311,7 +311,13 @@
   ],
   "certifications": [
     {
-      "name": "Data Essentials - Jedha Bootcamp",
+      "name": "Fullstack Data Analysis - Jedha Bootcamp",
+      "issuer": "Jedha",
+      "date": "2025",
+      "link": "https://www.credential.net/f1fe1bdf-9bf3-4322-a03e-9cc6d8339010#acc.kRm0G2Vz"
+    },
+    {
+      "name": "Essentials Data Analysis - Jedha Bootcamp",
       "issuer": "Jedha",
       "date": "2025",
       "link": "https://www.credential.net/641ee8db-401b-45d9-872b-f335943503fd#acc.IN16kz7g"
