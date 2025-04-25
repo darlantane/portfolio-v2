@@ -19,6 +19,84 @@ We analyzed data from three of the biggest platforms: **Steam, PlayStation, and 
 
 ---
 
+## 🧼 From Raw Data to Clean Insights
+
+Analyzing video game performance across platforms means dealing with a lot of different data sources – each with its own format, structure, and quirks. Here's how we built a clean, unified dataset from the ground up.
+
+---
+
+### 📥 1. Importing Raw Data from Multiple Platforms
+
+We loaded CSV datasets from **Steam**, **PlayStation**, and **Xbox**, covering games, prices, achievements, players, history and purchased_games.
+
+```python
+games_playstation = pd.read_csv("playstation/games.csv")
+games_steam = pd.read_csv("steam/games.csv")
+games_xbox = pd.read_csv("xbox/games.csv")
+```
+
+This gave us a comprehensive foundation, but the schemas were inconsistent.
+
+---
+
+### 🏷 2. Adding Platform Metadata
+
+To keep track of each game's origin, we added a `plateforme` column to key datasets:
+
+```python
+achievements_playstation['plateforme'] = 'playstation'
+achievements_steam['plateforme'] = 'steam'
+achievements_xbox['plateforme'] = 'xbox'
+```
+
+---
+
+### 🧹 3. Removing or converting Irrelevant or Corrupted Data
+
+We used :
+- `drop_duplicates()` and `drop()` carefully to preserve valid rows while cleaning.
+
+```python
+price_without_double = prices.drop_duplicates(subset='gameid')
+
+players.drop('nickname', axis=1, inplace=True)
+```
+
+- `fillna()` to replace empty values by 'unknown' and 'Null'.
+
+```python
+achievements = achievements.fillna({'title': 'unknown', 'description': 'unknown', 'points':'Null'})
+```
+
+- `to_datetime()` to convert date columns.
+
+```python
+prices['date_acquired'] = pd.to_datetime(arg = prices['date_acquired'],errors='coerce')
+```
+
+This step cleaned up the noise from partially scraped or incomplete rows.
+
+---
+
+### 🧩 4. Combining Datasets
+
+We then **concatenated** datasets by theme (e.g., achievements across platforms) into unified tables:
+
+```python
+achievements = pd.concat(
+    [achievements_playstation, achievements_steam, achievements_xbox],
+    axis=0, ignore_index=True
+)
+```
+
+---
+
+### ✅ Final Result
+
+After all these steps, you ended up with a **clean, multi-platform dataset** of over 1,500 games, fully ready for exploration across pricing, genre, geography, and platform performance.
+
+---
+
 ## 🧬 Genre: The DNA of a Best Seller
 
 ![Genres by Country](/articles/illustrations/genre.png)
