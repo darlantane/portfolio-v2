@@ -37,7 +37,6 @@ games_xbox = pd.read_csv("xbox/games.csv")
 
 This gave us a comprehensive foundation, but the schemas were inconsistent.
 
----
 
 ### 🏷 2. Adding Platform Metadata
 
@@ -49,7 +48,6 @@ achievements_steam['plateforme'] = 'steam'
 achievements_xbox['plateforme'] = 'xbox'
 ```
 
----
 
 ### 🧹 3. Removing or converting Irrelevant or Corrupted Data
 
@@ -76,7 +74,6 @@ prices['date_acquired'] = pd.to_datetime(arg = prices['date_acquired'],errors='c
 
 This step cleaned up the noise from partially scraped or incomplete rows.
 
----
 
 ### 🧩 4. Combining Datasets
 
@@ -89,7 +86,6 @@ achievements = pd.concat(
 )
 ```
 
----
 
 ### ✅ Final Result
 
@@ -148,7 +144,7 @@ Here’s what we’d recommend to game studios based on our analysis:
 
 ---
 
-## 🏁 Conclusion: The Next GTA V?
+## 🏁 Conclusion: The Next GTA VI?
 
 ![GTA V Ingredients](/articles/illustrations/success_gta.png)
 
