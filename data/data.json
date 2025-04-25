@@ -452,7 +452,18 @@
       "date": "2025-04-11",
       "author": "Darlan Tane",
       "readingTime": "6 min",
-      "relatedArticleIds": [4, 5]
+      "relatedArticleIds": [5, 7]
+    },
+    {
+      "id": 7,
+      "title": "🎮 What Makes a Video Game a Hit? Let’s Dive Into the Data",
+      "image": "/articles/covers/video-game-success.png",
+      "description": "A data deep-dive into what makes a video game successful—genres, pricing, platforms, and where to launch.",
+      "mdLink": "articles/video-game-success.md",
+      "date": "2025-04-25",
+      "author": "Darlan Tane",
+      "readingTime": "5 min",
+      "relatedArticleIds": [5, 6]
     }
   ]
 }
