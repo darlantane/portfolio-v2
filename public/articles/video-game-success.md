@@ -132,7 +132,7 @@ The top 20 countries generate **84% of achievements**. This means:
 
 ## 🧭 Strategic Recommendations
 
-![Strategic Insights](/articles/illustrations/strtegic_reco.png)
+![Strategic Insights](/articles/illustrations/strategic_reco.png)
 
 Here’s what we’d recommend to game studios based on our analysis:
 
