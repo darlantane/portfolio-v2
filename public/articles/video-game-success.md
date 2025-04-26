@@ -161,14 +161,14 @@ If we had to **reverse-engineer the success of a game like GTA V**, the formula 
 
 Huge thanks to:
 
-- 👩‍💻 Isa  
-- 👩‍💻 Ndeye  
-- 👩‍💻 Yulia  
+- 👩‍💻 [Isa Nyamunongo](linkedin.com/in/isa-n-95b62823b)
+- 👩‍💻 [Ndeye Ndiémé Dieng](linkedin.com/in/ndeye-ndiemé-dieng-13a7a870)
+- 👩‍💻 [Yulia Kholodova](https://www.linkedin.com/in/yulia-kholodova-4174a688/)
 
 And to our instructors:
 
-- 👨‍🏫 Victor  
-- 👨‍🏫 Julien  
+- 👨‍🏫 [Victor Salling](https://www.linkedin.com/company/jedhabootcamp/)
+- 👨‍🏫 [Julien Gibert](https://www.linkedin.com/in/juliengibert/)
 - 👨‍🏫 The entire Jedha team
 
 This was an incredibly rewarding project that blended **data science**, **storytelling**, and **business strategy** through the lens of one of the most exciting industries today.
