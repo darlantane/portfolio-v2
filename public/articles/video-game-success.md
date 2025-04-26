@@ -167,9 +167,9 @@ Huge thanks to:
 
 And to our instructors:
 
-- 👨‍🏫 [Victor Salling](https://www.linkedin.com/company/jedhabootcamp/)
+- 👨‍🏫 [Victor Salling](https://www.linkedin.com/in/victor-salling/)
 - 👨‍🏫 [Julien Gibert](https://www.linkedin.com/in/juliengibert/)
-- 👨‍🏫 The entire Jedha team
+- 👨‍🏫 [The entire Jedha team](https://www.linkedin.com/company/jedhabootcamp/)
 
 This was an incredibly rewarding project that blended **data science**, **storytelling**, and **business strategy** through the lens of one of the most exciting industries today.
 
