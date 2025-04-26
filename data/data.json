@@ -131,12 +131,13 @@
       "school": "JEDHA Bootcamp",
       "logo": "logos/jedha.svg",
       "degree": "Data Science Developer",
-      "period": "January 2025 - April 2025",
+      "period": "January 2025 - May 2025",
       "location": "Paris, France",
       "subjects": [
         "Python Programming: Data Exploration and Visualization (Pandas, Numpy, Seaborn, Matplotlib)",
         "SQL: Data Queries and Modeling (Google Cloud Platform, Microsoft Azure, Snowflake)",
         "Business Intelligence: Data Formatting, Exploration and Presentation (Power BI, Tableau, Looker Studio)",
+        "Big Data and Data Governance (Apache spark, Airflow)",
         "Predictive Analysis and Machine Learning (Dataiku)"
       ]
     },
