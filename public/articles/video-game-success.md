@@ -161,8 +161,8 @@ If we had to **reverse-engineer the success of a game like GTA V**, the formula 
 
 Huge thanks to:
 
-- 👩‍💻 [Isa Nyamunongo](linkedin.com/in/isa-n-95b62823b/)
-- 👩‍💻 [Ndeye Ndiémé Dieng](linkedin.com/in/ndeye-ndiemé-dieng-13a7a870/)
+- 👩‍💻 [Isa Nyamunongo](https://www.linkedin.com/in/isa-n-95b62823b/)
+- 👩‍💻 [Ndeye Ndiémé Dieng](https://www.linkedin.com/in/ndeye-ndiem%C3%A9-dieng-13a7a870/)
 - 👩‍💻 [Yulia Kholodova](https://www.linkedin.com/in/yulia-kholodova-4174a688/)
 
 And to our instructors:
