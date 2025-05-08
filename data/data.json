@@ -464,7 +464,18 @@
       "date": "2025-04-25",
       "author": "Darlan Tane",
       "readingTime": "5 min",
-      "relatedArticleIds": [5, 6]
+      "relatedArticleIds": [6, 8]
+    },
+    {
+      "id": 8,
+      "title": "🧬 What Influences Cancer Severity? A Data Deep Dive with SQL & Machine Learning",
+      "image": "/articles/covers/cancer-severity.png",
+      "description": "A combined SQL and machine learning analysis on cancer severity: uncover the most impactful risk factors across 50,000 global patients.",
+      "mdLink": "articles/cancer-severity.md",
+      "date": "2025-05-08",
+      "author": "Darlan Tane",
+      "readingTime": "7 min",
+      "relatedArticleIds": [6, 7]
     }
   ]
 }
