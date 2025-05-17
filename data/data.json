@@ -475,7 +475,18 @@
       "date": "2025-05-08",
       "author": "Darlan Tane",
       "readingTime": "7 min",
-      "relatedArticleIds": [6, 7]
+      "relatedArticleIds": [7, 9]
+    },
+    {
+      "id": 9,
+      "title": "🎓 What Influences Exam Scores? A Visual Dive with Tableau",
+      "image": "/articles/covers/exam-score.png",
+      "description": "A Tableau dashboard exploration of what impacts exam scores the most—stress, sleep, motivation, and more.",
+      "mdLink": "articles/exam-score.md",
+      "date": "2025-05-15",
+      "author": "Darlan Tane",
+      "readingTime": "5 min",
+      "relatedArticleIds": [7, 8]
     }
   ]
 }
