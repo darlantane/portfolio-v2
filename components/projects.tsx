@@ -23,7 +23,7 @@ export default function Projects() {
     switch (type) {
       case "data-analysis":
         return <BarChart4 className="h-5 w-5" />
-      case "development":
+      case "software-development":
         return <FileCode className="h-5 w-5" />
       default:
         return <BarChart4 className="h-5 w-5" />

@@ -35,7 +35,7 @@
   ],
   "hero": {
     "name": "Darlan Tane",
-    "title": "Data Analyst, Agronomy and agro-industry engineer",
+    "title": "Data Analyst",
     "description": "Passionate about transforming data into actionable insights. With expertise in Python, SQL, and data visualization tools.",
     "resumeLink": "documents/CV-Darlan_Tane-Data_Analyst.pdf",
     "socialLinks": [
@@ -88,44 +88,7 @@
       }
     ]
   },
-  "experience": [
-    {
-      "title": "Supply Chain Manager",
-      "company": "LA MATER INC.",
-      "location": "Paris, France",
-      "period": "May 2024 - November 2024",
-      "responsibilities": [
-        "Collected, cleaned and analyzed historical data using dashboards to anticipate demand peaks, price variations, and quarterly transportation costs",
-        "Optimized goods routing by 30% through analysis of delivery reports and real-time tracking of merchandise",
-        "Collaborated with cross-functional teams to improve supply chain efficiency"
-      ],
-      "logo": "logos/lamater.png"
-    },
-    {
-      "title": "Production Manager",
-      "company": "SAINTE LUCIE",
-      "location": "Creil, France",
-      "period": "February 2023 - September 2023",
-      "responsibilities": [
-        "Analyzed production line performance indicators (KPIs) using Deep Learning to predict performance values",
-        "Created 25 work instruction documents, ensuring operators' skill advancement in production activities",
-        "Planned production schedules based on human and material resources availability"
-      ],
-      "logo": "logos/saintelucie.png"
-    },
-    {
-      "title": "Production Line Analyst",
-      "company": "KUMOFOODS",
-      "location": "Draveil, France",
-      "period": "April 2022 - August 2022",
-      "responsibilities": [
-        "Optimized production costs by 20% using an R algorithm to estimate costs and correlate them with KPIs",
-        "Initiated continuous improvement plans (5S) based on data analysis",
-        "Managed production flows and organized production teams"
-      ],
-      "logo": "logos/kumo.png"
-    }
-  ],
+
   "education": [
     {
       "school": "JEDHA Bootcamp",
@@ -228,7 +191,7 @@
     {
       "name": "MobyDoc Landing Page",
       "description": "Designed and developed a landing page for a fictional company on Hubspot",
-      "type": "development",
+      "type": "software-development",
       "technologies": ["JavaScript", "Hubspot", "HTML", "CSS"],
       "link": "https://github.com/darlantane/mobydoc_landing_page"
     }
@@ -308,6 +271,44 @@
       "name": "VS Code",
       "level": 85,
       "category": "Other"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Supply Chain Manager",
+      "company": "LA MATER INC.",
+      "location": "Paris, France",
+      "period": "May 2024 - November 2024",
+      "responsibilities": [
+        "Collected, cleaned and analyzed historical data using dashboards to anticipate demand peaks, price variations, and quarterly transportation costs",
+        "Optimized goods routing by 30% through analysis of delivery reports and real-time tracking of merchandise",
+        "Collaborated with cross-functional teams to improve supply chain efficiency"
+      ],
+      "logo": "logos/lamater.png"
+    },
+    {
+      "title": "Production Manager",
+      "company": "SAINTE LUCIE",
+      "location": "Creil, France",
+      "period": "February 2023 - September 2023",
+      "responsibilities": [
+        "Analyzed production line performance indicators (KPIs) using Deep Learning to predict performance values",
+        "Created 25 work instruction documents, ensuring operators' skill advancement in production activities",
+        "Planned production schedules based on human and material resources availability"
+      ],
+      "logo": "logos/saintelucie.png"
+    },
+    {
+      "title": "Production Line Analyst",
+      "company": "KUMOFOODS",
+      "location": "Draveil, France",
+      "period": "April 2022 - August 2022",
+      "responsibilities": [
+        "Optimized production costs by 20% using an R algorithm to estimate costs and correlate them with KPIs",
+        "Initiated continuous improvement plans (5S) based on data analysis",
+        "Managed production flows and organized production teams"
+      ],
+      "logo": "logos/kumo.png"
     }
   ],
   "certifications": [
