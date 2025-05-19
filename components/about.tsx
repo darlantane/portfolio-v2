@@ -5,6 +5,8 @@ import { useRef } from "react"
 import { ChevronRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import data from "@/data/data.json"
+import { Button } from "./ui/button"
+import Link from "next/link"
 
 export default function About() {
   const ref = useRef(null)
@@ -72,6 +74,9 @@ export default function About() {
                 ))}
               </div>
             </motion.div>
+            <Button asChild variant="default" className="tech-button">
+              <Link href={`/articles`}>Read my technical blog</Link>
+            </Button>
           </div>
 
           <motion.div
