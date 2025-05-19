@@ -20,9 +20,8 @@ export async function generateMetadata({
   params,
 }: ArticlePageProps): Promise<Metadata> {
   const { articles } = data;
-  const article = articles.find(
-    (article) => article.id.toString() === params.id
-  );
+  const { id } = await params;
+  const article = articles.find((article) => article.id.toString() === id);
 
   if (!article) {
     return {
@@ -39,9 +38,8 @@ export async function generateMetadata({
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { articles } = data;
-  const article = articles.find(
-    (article) => article.id.toString() === params.id
-  );
+  const { id } = await params;
+  const article = articles.find((article) => article.id.toString() === id);
 
   if (!article) {
     notFound();

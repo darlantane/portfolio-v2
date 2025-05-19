@@ -385,6 +385,17 @@
   },
   "articles": [
     {
+      "id": 10,
+      "title": "🐾 Exploring Feline Morphology with Tableau — Angora, Maine Coon & Ragdoll",
+      "image": "/articles/covers/feline-species.png",
+      "description": "A step-by-step guide to creating a stunning dashboard in Power BI, from data import to visualization.",
+      "mdLink": "articles/feline-species.md",
+      "date": "2025-05-19",
+      "author": "Darlan Tane",
+      "readingTime": "6 min",
+      "relatedArticleIds": [8, 9]
+    },
+    {
       "id": 9,
       "title": "🎓 What Influences Exam Scores? A Visual Dive with Tableau",
       "image": "/articles/covers/exam-score.png",
@@ -393,7 +404,7 @@
       "date": "2025-05-15",
       "author": "Darlan Tane",
       "readingTime": "5 min",
-      "relatedArticleIds": [7, 8]
+      "relatedArticleIds": [8, 10]
     },
     {
       "id": 8,
