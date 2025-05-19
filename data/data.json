@@ -9,8 +9,8 @@
       "text": "Education"
     },
     {
-      "id": "experience",
-      "text": "Experience"
+      "id": "certifications",
+      "text": "Certifications"
     },
     {
       "id": "projects",
@@ -21,8 +21,8 @@
       "text": "Skills"
     },
     {
-      "id": "certifications",
-      "text": "Certifications"
+      "id": "experience",
+      "text": "Experience"
     },
     {
       "id": "contact",
