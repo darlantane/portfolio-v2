@@ -19,10 +19,10 @@ export default function Home() {
         <Hero />
         <About />
         <Education />
-        <Experience />
+        <Certifications />
         <Projects />
         <Skills />
-        <Certifications />
+        <Experience />
         <Contact />
       </div>
       <Footer />
