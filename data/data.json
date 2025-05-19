@@ -88,44 +88,6 @@
       }
     ]
   },
-  "experience": [
-    {
-      "title": "Supply Chain Manager",
-      "company": "LA MATER INC.",
-      "location": "Paris, France",
-      "period": "May 2024 - November 2024",
-      "responsibilities": [
-        "Collected, cleaned and analyzed historical data using dashboards to anticipate demand peaks, price variations, and quarterly transportation costs",
-        "Optimized goods routing by 20% through analysis of delivery reports and real-time tracking of merchandise",
-        "Collaborated with cross-functional teams to improve supply chain efficiency"
-      ],
-      "logo": "logos/lamater.png"
-    },
-    {
-      "title": "Production Manager",
-      "company": "SAINTE LUCIE",
-      "location": "Creil, France",
-      "period": "February 2023 - September 2023",
-      "responsibilities": [
-        "Analyzed production line performance indicators (KPIs) using Deep Learning to predict performance values",
-        "Created 25 work instruction documents, ensuring operators' skill advancement in production activities",
-        "Planned production schedules based on human and material resources availability"
-      ],
-      "logo": "logos/saintelucie.png"
-    },
-    {
-      "title": "Production Line Analyst",
-      "company": "KUMOFOODS",
-      "location": "Draveil, France",
-      "period": "April 2022 - August 2022",
-      "responsibilities": [
-        "Optimized production costs by 10% using an R algorithm to estimate costs and correlate them with KPIs",
-        "Initiated continuous improvement plans (5S) based on data analysis",
-        "Managed production flows and organized production teams"
-      ],
-      "logo": "logos/kumo.png"
-    }
-  ],
   "education": [
     {
       "school": "JEDHA Bootcamp",
@@ -166,6 +128,56 @@
         "Biology and biochemistry",
         "Geography, geology and Environment science"
       ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Fullstack Data Analysis - Jedha Bootcamp",
+      "issuer": "Jedha",
+      "date": "2025",
+      "link": "https://www.credential.net/f1fe1bdf-9bf3-4322-a03e-9cc6d8339010#acc.kRm0G2Vz"
+    },
+    {
+      "name": "Essentials Data Analysis - Jedha Bootcamp",
+      "issuer": "Jedha",
+      "date": "2025",
+      "link": "https://www.credential.net/641ee8db-401b-45d9-872b-f335943503fd#acc.IN16kz7g"
+    },
+    {
+      "name": "Supervised Machine Learning",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/CRK3WQJG979B"
+    },
+    {
+      "name": "Advanced Learning Algorithms",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/25MCU3PM9NTS"
+    },
+    {
+      "name": "Neural Networks and Deep Learning",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/SJ6GTTZKH5MM"
+    },
+    {
+      "name": "Unsupervised Machine Learning",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/9QH32LDL4LZ2"
+    },
+    {
+      "name": "Data Visualization in Power BI",
+      "issuer": "Coursera",
+      "date": "2023",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/JU4VMBT82S7H"
+    },
+    {
+      "name": "SQL for Data Science",
+      "issuer": "Coursera",
+      "date": "2022",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/3JPPGBSUKEL4"
     }
   ],
   "projects": [
@@ -310,54 +322,42 @@
       "category": "Other"
     }
   ],
-  "certifications": [
+  "experience": [
     {
-      "name": "Fullstack Data Analysis - Jedha Bootcamp",
-      "issuer": "Jedha",
-      "date": "2025",
-      "link": "https://www.credential.net/f1fe1bdf-9bf3-4322-a03e-9cc6d8339010#acc.kRm0G2Vz"
+      "title": "Supply Chain Manager",
+      "company": "LA MATER INC.",
+      "location": "Paris, France",
+      "period": "May 2024 - November 2024",
+      "responsibilities": [
+        "Collected, cleaned and analyzed historical data using dashboards to anticipate demand peaks, price variations, and quarterly transportation costs",
+        "Optimized goods routing by 20% through analysis of delivery reports and real-time tracking of merchandise",
+        "Collaborated with cross-functional teams to improve supply chain efficiency"
+      ],
+      "logo": "logos/lamater.png"
     },
     {
-      "name": "Essentials Data Analysis - Jedha Bootcamp",
-      "issuer": "Jedha",
-      "date": "2025",
-      "link": "https://www.credential.net/641ee8db-401b-45d9-872b-f335943503fd#acc.IN16kz7g"
+      "title": "Production Manager",
+      "company": "SAINTE LUCIE",
+      "location": "Creil, France",
+      "period": "February 2023 - September 2023",
+      "responsibilities": [
+        "Analyzed production line performance indicators (KPIs) using Deep Learning to predict performance values",
+        "Created 25 work instruction documents, ensuring operators' skill advancement in production activities",
+        "Planned production schedules based on human and material resources availability"
+      ],
+      "logo": "logos/saintelucie.png"
     },
     {
-      "name": "Supervised Machine Learning",
-      "issuer": "Coursera",
-      "date": "2023",
-      "link": "https://www.coursera.org/account/accomplishments/certificate/CRK3WQJG979B"
-    },
-    {
-      "name": "Advanced Learning Algorithms",
-      "issuer": "Coursera",
-      "date": "2023",
-      "link": "https://www.coursera.org/account/accomplishments/certificate/25MCU3PM9NTS"
-    },
-    {
-      "name": "Neural Networks and Deep Learning",
-      "issuer": "Coursera",
-      "date": "2023",
-      "link": "https://www.coursera.org/account/accomplishments/certificate/SJ6GTTZKH5MM"
-    },
-    {
-      "name": "Unsupervised Machine Learning",
-      "issuer": "Coursera",
-      "date": "2023",
-      "link": "https://www.coursera.org/account/accomplishments/certificate/9QH32LDL4LZ2"
-    },
-    {
-      "name": "Data Visualization in Power BI",
-      "issuer": "Coursera",
-      "date": "2023",
-      "link": "https://www.coursera.org/account/accomplishments/certificate/JU4VMBT82S7H"
-    },
-    {
-      "name": "SQL for Data Science",
-      "issuer": "Coursera",
-      "date": "2022",
-      "link": "https://www.coursera.org/account/accomplishments/certificate/3JPPGBSUKEL4"
+      "title": "Production Line Analyst",
+      "company": "KUMOFOODS",
+      "location": "Draveil, France",
+      "period": "April 2022 - August 2022",
+      "responsibilities": [
+        "Optimized production costs by 10% using an R algorithm to estimate costs and correlate them with KPIs",
+        "Initiated continuous improvement plans (5S) based on data analysis",
+        "Managed production flows and organized production teams"
+      ],
+      "logo": "logos/kumo.png"
     }
   ],
   "contact": {
