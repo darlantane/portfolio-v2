@@ -22,7 +22,7 @@ export default function ArticlesPage() {
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold mb-2 tech-heading">
-            <span className="text-primary">#</span> Articles
+            <span className="text-primary">#</span> Blog
           </h1>
           <div className="w-20 h-1 bg-primary mb-8"></div>
 
