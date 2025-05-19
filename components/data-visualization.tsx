@@ -95,7 +95,7 @@ export default function DataVisualization() {
 
     // Draw function
     const draw = () => {
-      time += 0.01
+      time += 0.005 // Reduced time increment to slow down animations
       colors = getColors() // Update colors if theme changes
 
       // Clear canvas
@@ -176,7 +176,7 @@ export default function DataVisualization() {
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: Math.random() * 10 + 15,
+              duration: Math.random() * 20 + 30, // Increased duration to slow down animations
               repeat: Number.POSITIVE_INFINITY,
               repeatType: "loop",
               times: [0, 0.5, 1],
@@ -205,7 +205,7 @@ export default function DataVisualization() {
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: Math.random() * 8 + 10,
+              duration: Math.random() * 16 + 20, // Increased duration to slow down animations
               repeat: Number.POSITIVE_INFINITY,
               repeatType: "loop",
               times: [0, 0.5, 1],
@@ -234,7 +234,7 @@ export default function DataVisualization() {
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: Math.random() * 8 + 10,
+              duration: Math.random() * 16 + 20, // Increased duration to slow down animations
               repeat: Number.POSITIVE_INFINITY,
               repeatType: "loop",
               times: [0, 0.5, 1],
@@ -264,7 +264,7 @@ export default function DataVisualization() {
             scale: [0.5, 1.2, 0.5],
           }}
           transition={{
-            duration: 8,
+            duration: 16, // Increased duration to slow down animations
             repeat: Number.POSITIVE_INFINITY,
             repeatType: "loop",
             times: [0, 0.5, 1],
@@ -282,7 +282,7 @@ function drawFuturisticGrid(ctx: CanvasRenderingContext2D, width: number, height
   // Perspective grid
   const horizonY = height * 0.5
   const gridSpacing = 40
-  const perspectiveStrength = 0.2 + Math.sin(time * 0.2) * 0.05
+  const perspectiveStrength = 0.2 + Math.sin(time * 0.1) * 0.05 // Reduced time multiplier
 
   ctx.strokeStyle = colors.grid
   ctx.lineWidth = 0.5
@@ -299,7 +299,7 @@ function drawFuturisticGrid(ctx: CanvasRenderingContext2D, width: number, height
   }
 
   // Vertical lines with perspective
-  const vanishingPointX = width * 0.5 + Math.sin(time * 0.3) * width * 0.1
+  const vanishingPointX = width * 0.5 + Math.sin(time * 0.15) * width * 0.1 // Reduced time multiplier
 
   for (let x = 0; x <= width; x += gridSpacing) {
     ctx.beginPath()
@@ -385,8 +385,8 @@ function drawParticles(
 
 function updateParticles(particles: any[], width: number, height: number) {
   particles.forEach((p) => {
-    p.x += p.vx
-    p.y += p.vy
+    p.x += p.vx * 0.5 // Reduced velocity multiplier
+    p.y += p.vy * 0.5 // Reduced velocity multiplier
 
     // Bounce off edges with some damping
     if (p.x < 0 || p.x > width) {
@@ -400,12 +400,12 @@ function updateParticles(particles: any[], width: number, height: number) {
     }
 
     // Slow down over time
-    p.vx *= 0.99
-    p.vy *= 0.99
+    p.vx *= 0.995 // Increased damping to slow down particles
+    p.vy *= 0.995 // Increased damping to slow down particles
 
     // Add some random movement
-    p.vx += (Math.random() - 0.5) * 0.05
-    p.vy += (Math.random() - 0.5) * 0.05
+    p.vx += (Math.random() - 0.5) * 0.025 // Reduced random movement
+    p.vy += (Math.random() - 0.5) * 0.025 // Reduced random movement
   })
 }
 
@@ -445,7 +445,7 @@ function drawDataNodes(
     ctx.globalAlpha = 1
 
     // Draw pulse effect
-    const pulseRadius = node.radius * (3 + Math.sin(node.pulse) * 2)
+    const pulseRadius = node.radius * (3 + Math.sin(node.pulse * 0.5) * 2) // Reduced time multiplier
     const pulseOpacity = Math.max(0, 0.5 - node.pulse / 5)
 
     ctx.beginPath()
@@ -478,8 +478,8 @@ function drawDataNodes(
 function updateNodes(nodes: any[], width: number, height: number, time: number) {
   nodes.forEach((node) => {
     // Update position
-    node.x += node.vx
-    node.y += node.vy
+    node.x += node.vx * 0.5 // Reduced velocity multiplier
+    node.y += node.vy * 0.5 // Reduced velocity multiplier
 
     // Bounce off edges
     if (node.x < node.radius || node.x > width - node.radius) {
@@ -495,22 +495,22 @@ function updateNodes(nodes: any[], width: number, height: number, time: number) 
     }
 
     // Update pulse
-    node.pulse += 0.05
+    node.pulse += 0.025 // Reduced pulse increment
     if (node.pulse > Math.PI * 2) {
       node.pulse = 0
     }
 
     // Slowly change value
-    if (Math.random() < 0.01) {
+    if (Math.random() < 0.005) { // Reduced frequency of value change
       node.value = Math.floor(Math.random() * 100)
     }
 
     // Add some random movement
-    node.vx += (Math.random() - 0.5) * 0.02
-    node.vy += (Math.random() - 0.5) * 0.02
+    node.vx += (Math.random() - 0.5) * 0.01 // Reduced random movement
+    node.vy += (Math.random() - 0.5) * 0.01 // Reduced random movement
 
     // Limit velocity
-    const maxVel = 1
+    const maxVel = 0.5 // Reduced max velocity
     const vel = Math.sqrt(node.vx * node.vx + node.vy * node.vy)
 
     if (vel > maxVel) {
@@ -583,9 +583,9 @@ function updateLineData(data: any[], width: number, height: number, time: number
 
     // Create a smooth wave pattern that changes over time
     point.y =
-      (Math.sin(normalizedX * 10 + time) * 0.2 +
-        Math.sin(normalizedX * 5 - time * 0.5) * 0.1 +
-        Math.sin(normalizedX * 15 + time * 0.2) * 0.05 +
+      (Math.sin(normalizedX * 10 + time * 0.5) * 0.2 + // Reduced time multiplier
+        Math.sin(normalizedX * 5 - time * 0.25) * 0.1 + // Reduced time multiplier
+        Math.sin(normalizedX * 15 + time * 0.1) * 0.05 + // Reduced time multiplier
         0.5) *
         height *
         0.6 +
@@ -606,7 +606,7 @@ function drawHolographicCircles(
 
   // Draw multiple circles with different rotation speeds
   for (let i = 0; i < 3; i++) {
-    const rotationSpeed = 0.5 + i * 0.3
+    const rotationSpeed = 0.25 + i * 0.15 // Reduced rotation speed
     const radius = maxRadius * (0.6 + i * 0.2)
     const segments = 12 + i * 4
 
@@ -644,7 +644,7 @@ function drawHolographicCircles(
   // Draw data points along the circle
   const dataPoints = 6
   for (let i = 0; i < dataPoints; i++) {
-    const angle = (i / dataPoints) * Math.PI * 2 + time * 0.2
+    const angle = (i / dataPoints) * Math.PI * 2 + time * 0.1 // Reduced time multiplier
     const radius = maxRadius * 0.8
 
     const x = centerX + Math.cos(angle) * radius
@@ -656,7 +656,7 @@ function drawHolographicCircles(
     ctx.fill()
 
     // Draw value
-    const value = Math.floor(Math.sin(time + i) * 50 + 50)
+    const value = Math.floor(Math.sin(time * 0.5 + i) * 50 + 50) // Reduced time multiplier
     ctx.fillStyle = colors.text
     ctx.font = "10px monospace"
     ctx.textAlign = "center"
@@ -719,11 +719,11 @@ function drawAnimatedBarChart(
     // Smooth transition between heights
     let currentHeight = window.prevBarHeights[i]
     // Ease towards target height
-    currentHeight += (targetHeight - currentHeight) * 0.05
+    currentHeight += (targetHeight - currentHeight) * 0.025 // Reduced easing factor
     window.prevBarHeights[i] = currentHeight
 
     // Apply subtle wave effect
-    const animatedHeight = currentHeight * (0.98 + Math.sin(time * 2 + i) * 0.02)
+    const animatedHeight = currentHeight * (0.98 + Math.sin(time * 1 + i) * 0.01) // Reduced time multiplier
 
     // Bar gradient
     const barGradient = ctx.createLinearGradient(0, startY, 0, startY - animatedHeight)
@@ -768,7 +768,7 @@ function drawAnimatedPieChart(
   ctx.globalAlpha = opacity
 
   const total = data.reduce((sum, value) => sum + value, 0)
-  let startAngle = time * 0.2
+  let startAngle = time * 0.1 // Reduced time multiplier
 
   // Draw pie segments with animation
   data.forEach((value, i) => {
@@ -777,7 +777,7 @@ function drawAnimatedPieChart(
     const midAngle = startAngle + sliceAngle / 2
 
     // Animated radius for 3D effect
-    const animatedRadius = radius * (1 + Math.sin(time * 3 + i) * 0.05)
+    const animatedRadius = radius * (1 + Math.sin(time * 1.5 + i) * 0.025) // Reduced time multiplier
 
     // Draw slice
     ctx.beginPath()
@@ -823,4 +823,3 @@ function drawAnimatedPieChart(
 
   ctx.globalAlpha = 1
 }
-

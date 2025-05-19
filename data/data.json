@@ -76,7 +76,7 @@
       },
       {
         "title": "Mastering Python & SQL",
-        "description": "Developed strong coding skills for data manipulation through projects at Jedha : Air_pollution, Titanic survival pollution, Startup's profitability"
+        "description": "Developed strong coding skills for data manipulation through projects at Jedha : Air_pollution, Titanic survival prediction, Startup's profitability"
       },
       {
         "title": "Business Intelligence",
@@ -92,7 +92,7 @@
     {
       "school": "JEDHA Bootcamp",
       "logo": "logos/jedha.svg",
-      "degree": "Data Science Developer",
+      "degree": "Data Analyst",
       "period": "January 2025 - May 2025",
       "location": "Paris, France",
       "subjects": [
@@ -385,52 +385,48 @@
   },
   "articles": [
     {
-      "id": 1,
-      "title": "🚀 Can we predict a startup's profitability based on key business factors?",
-      "image": "/articles/covers/startup-profitability.png",
-      "description": "How key business factors like R&D and marketing influence startup profitability through a predictive regression model?",
-      "mdLink": "articles/startup-profitability.md",
-      "gitHubLink": "https://github.com/darlantane/startup_profitability",
-      "date": "2025-02-10",
-      "author": "Darlan Tane",
-      "readingTime": "4 min",
-      "relatedArticleIds": [2, 3]
-    },
-    {
-      "id": 2,
-      "title": "🚢 Predicting Titanic Survivors with Machine Learning",
-      "image": "/articles/covers/titanic-survivors.png",
-      "description": "Predict who survived the Titanic disaster using machine learning and data visualization.",
-      "mdLink": "articles/titanic-survivors.md",
-      "gitHubLink": "https://github.com/darlantane/titanic_project",
-      "date": "2025-02-17",
-      "author": "Darlan Tane",
-      "readingTime": "4 min",
-      "relatedArticleIds": [1, 3]
-    },
-    {
-      "id": 3,
-      "title": "🌍 Can We Predict Air Pollution Levels in the US with Machine Learning?",
-      "image": "/articles/covers/air-pollution.png",
-      "description": "Can we use machine learning to forecast pollution levels in US cities? This project explores the limits of data and modeling in environmental prediction.",
-      "mdLink": "articles/air-pollution.md",
-      "gitHubLink": "https://github.com/darlantane/air_pollution",
-      "date": "2025-02-25",
+      "id": 9,
+      "title": "🎓 What Influences Exam Scores? A Visual Dive with Tableau",
+      "image": "/articles/covers/exam-score.png",
+      "description": "A Tableau dashboard exploration of what impacts exam scores the most—stress, sleep, motivation, and more.",
+      "mdLink": "articles/exam-score.md",
+      "date": "2025-05-15",
       "author": "Darlan Tane",
       "readingTime": "5 min",
-      "relatedArticleIds": [2, 4]
+      "relatedArticleIds": [7, 8]
     },
     {
-      "id": 4,
-      "title": "🚨 No Appointments Available! Meet MobyDoc",
-      "image": "/articles/covers/mobydoc.png",
-      "description": "MobyDoc: A fictional startup designed to solve urgent medical appointment scheduling with a real-world landing page and analytics setup.",
-      "mdLink": "articles/mobydoc.md",
-      "gitHubLink": "https://github.com/darlantane/mobydoc_landing_page",
-      "date": "2025-03-06",
+      "id": 8,
+      "title": "🧬 What Influences Cancer Severity? A Data Deep Dive with SQL & Machine Learning",
+      "image": "/articles/covers/cancer-severity.png",
+      "description": "A combined SQL and machine learning analysis on cancer severity: uncover the most impactful risk factors across 50,000 global patients.",
+      "mdLink": "articles/cancer-severity.md",
+      "date": "2025-05-08",
       "author": "Darlan Tane",
-      "readingTime": "4 min",
-      "relatedArticleIds": [3, 5]
+      "readingTime": "7 min",
+      "relatedArticleIds": [7, 9]
+    },
+    {
+      "id": 7,
+      "title": "🎮 What Makes a Video Game a Hit? Let’s Dive Into the Data",
+      "image": "/articles/covers/video-game-success.png",
+      "description": "A data deep-dive into what makes a video game successful—genres, pricing, platforms, and where to launch.",
+      "mdLink": "articles/video-game-success.md",
+      "date": "2025-04-25",
+      "author": "Darlan Tane",
+      "readingTime": "5 min",
+      "relatedArticleIds": [6, 8]
+    },
+    {
+      "id": 6,
+      "title": "🧘‍♂️ Mastering Git & GitHub basics as a Data Analyst",
+      "image": "/articles/covers/mastering-git.png",
+      "description": "How I moved beyond the basics of Git and GitHub to truly understand version control—and why it’s now an essential part of my data analyst toolkit.",
+      "mdLink": "articles/mastering-git.md",
+      "date": "2025-04-11",
+      "author": "Darlan Tane",
+      "readingTime": "6 min",
+      "relatedArticleIds": [5, 7]
     },
     {
       "id": 5,
@@ -445,48 +441,52 @@
       "relatedArticleIds": [4, 6]
     },
     {
-      "id": 6,
-      "title": "🧘‍♂️ Mastering Git & GitHub basics as a Data Analyst",
-      "image": "/articles/covers/mastering-git.png",
-      "description": "How I moved beyond the basics of Git and GitHub to truly understand version control—and why it’s now an essential part of my data analyst toolkit.",
-      "mdLink": "articles/mastering-git.md",
-      "date": "2025-04-11",
+      "id": 4,
+      "title": "🚨 No Appointments Available! Meet MobyDoc",
+      "image": "/articles/covers/mobydoc.png",
+      "description": "MobyDoc: A fictional startup designed to solve urgent medical appointment scheduling with a real-world landing page and analytics setup.",
+      "mdLink": "articles/mobydoc.md",
+      "gitHubLink": "https://github.com/darlantane/mobydoc_landing_page",
+      "date": "2025-03-06",
       "author": "Darlan Tane",
-      "readingTime": "6 min",
-      "relatedArticleIds": [5, 7]
+      "readingTime": "4 min",
+      "relatedArticleIds": [3, 5]
     },
     {
-      "id": 7,
-      "title": "🎮 What Makes a Video Game a Hit? Let’s Dive Into the Data",
-      "image": "/articles/covers/video-game-success.png",
-      "description": "A data deep-dive into what makes a video game successful—genres, pricing, platforms, and where to launch.",
-      "mdLink": "articles/video-game-success.md",
-      "date": "2025-04-25",
+      "id": 3,
+      "title": "🌍 Can We Predict Air Pollution Levels in the US with Machine Learning?",
+      "image": "/articles/covers/air-pollution.png",
+      "description": "Can we use machine learning to forecast pollution levels in US cities? This project explores the limits of data and modeling in environmental prediction.",
+      "mdLink": "articles/air-pollution.md",
+      "gitHubLink": "https://github.com/darlantane/air_pollution",
+      "date": "2025-02-25",
       "author": "Darlan Tane",
       "readingTime": "5 min",
-      "relatedArticleIds": [6, 8]
+      "relatedArticleIds": [2, 4]
     },
     {
-      "id": 8,
-      "title": "🧬 What Influences Cancer Severity? A Data Deep Dive with SQL & Machine Learning",
-      "image": "/articles/covers/cancer-severity.png",
-      "description": "A combined SQL and machine learning analysis on cancer severity: uncover the most impactful risk factors across 50,000 global patients.",
-      "mdLink": "articles/cancer-severity.md",
-      "date": "2025-05-08",
+      "id": 2,
+      "title": "🚢 Predicting Titanic Survivors with Machine Learning",
+      "image": "/articles/covers/titanic-survivors.png",
+      "description": "Predict who survived the Titanic disaster using machine learning and data visualization.",
+      "mdLink": "articles/titanic-survivors.md",
+      "gitHubLink": "https://github.com/darlantane/titanic_project",
+      "date": "2025-02-17",
       "author": "Darlan Tane",
-      "readingTime": "7 min",
-      "relatedArticleIds": [7, 9]
+      "readingTime": "4 min",
+      "relatedArticleIds": [1, 3]
     },
     {
-      "id": 9,
-      "title": "🎓 What Influences Exam Scores? A Visual Dive with Tableau",
-      "image": "/articles/covers/exam-score.png",
-      "description": "A Tableau dashboard exploration of what impacts exam scores the most—stress, sleep, motivation, and more.",
-      "mdLink": "articles/exam-score.md",
-      "date": "2025-05-15",
+      "id": 1,
+      "title": "🚀 Can we predict a startup's profitability based on key business factors?",
+      "image": "/articles/covers/startup-profitability.png",
+      "description": "How key business factors like R&D and marketing influence startup profitability through a predictive regression model?",
+      "mdLink": "articles/startup-profitability.md",
+      "gitHubLink": "https://github.com/darlantane/startup_profitability",
+      "date": "2025-02-10",
       "author": "Darlan Tane",
-      "readingTime": "5 min",
-      "relatedArticleIds": [7, 8]
+      "readingTime": "4 min",
+      "relatedArticleIds": [2, 3]
     }
   ]
 }
