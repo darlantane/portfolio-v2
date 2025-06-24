@@ -385,6 +385,17 @@
   },
   "articles": [
     {
+      "id": 11,
+      "title": "📱 Play Store Pulse – Mining 460 K Reviews from 217 Android Apps",
+      "image": "/articles/covers/play-store-app.png",
+      "description": "A BigQuery + Looker Studio deep-dive into 217 Android apps and 460 K Play Store reviews—discover what drives downloads, ratings, and the dreaded “ad penalty.”",
+      "mdLink": "articles/play-store-app.md",
+      "date": "2025-06-24",
+      "author": "Darlan Tane",
+      "readingTime": "6 min",
+      "relatedArticleIds": [9, 10]
+    },
+    {
       "id": 10,
       "title": "🐾 Exploring Feline Morphology with Tableau — Angora, Maine Coon & Ragdoll",
       "image": "/articles/covers/feline-species.png",
@@ -394,7 +405,7 @@
       "date": "2025-05-19",
       "author": "Darlan Tane",
       "readingTime": "6 min",
-      "relatedArticleIds": [8, 9]
+      "relatedArticleIds": [9, 11]
     },
     {
       "id": 9,
