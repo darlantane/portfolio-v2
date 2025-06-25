@@ -132,6 +132,12 @@
   ],
   "certifications": [
     {
+      "name": "Lead Data Analysis - Jedha Bootcamp",
+      "issuer": "Jedha",
+      "date": "2025",
+      "link": "https://www.credential.net/dd97407c-3ffd-4003-8dc0-8ec52710af02#acc.Rw1X9mIp"
+    },
+    {
       "name": "Fullstack Data Analysis - Jedha Bootcamp",
       "issuer": "Jedha",
       "date": "2025",
@@ -390,6 +396,7 @@
       "image": "/articles/covers/play-store-app.png",
       "description": "A BigQuery + Looker Studio deep-dive into 217 Android apps and 460 K Play Store reviews—discover what drives downloads, ratings, and the dreaded “ad penalty.”",
       "mdLink": "articles/play-store-app.md",
+      "gitHubLink": "https://github.com/darlantane/metadata_for_mobile_applications",
       "date": "2025-06-24",
       "author": "Darlan Tane",
       "readingTime": "6 min",
