@@ -391,6 +391,18 @@
   },
   "articles": [
     {
+      "id": 12,
+      "title": "👩‍💼📊 HR Analytics Deep‑Dive — What Data Says About Salary and Burnout Risk",
+      "image": "/articles/covers/hr-analytics.png",
+      "description": "I analysed HR data to explain salary drivers and estimate burnout risk with interpretable models—clear visuals and takeaways, not medical advice.",
+      "mdLink": "articles/hr-analytics.md",
+      "gitHubLink": "https://github.com/darlantane/metadata_for_mobile_applications",
+      "date": "2025-07-28",
+      "author": "Darlan Tane",
+      "readingTime": "7 min",
+      "relatedArticleIds": [10, 11]
+    },
+    {
       "id": 11,
       "title": "📱 Play Store Pulse – Mining 460 K Reviews from 217 Android Apps",
       "image": "/articles/covers/play-store-app.png",
@@ -400,7 +412,7 @@
       "date": "2025-06-24",
       "author": "Darlan Tane",
       "readingTime": "6 min",
-      "relatedArticleIds": [9, 10]
+      "relatedArticleIds": [10, 12]
     },
     {
       "id": 10,
