@@ -90,6 +90,18 @@
   },
   "education": [
     {
+      "school": "Le Wagon",
+      "logo": "logos/LeWagon.svg",
+      "degree": "Data Science",
+      "period": "July 2025 - August 2025",
+      "location": "Paris, France",
+      "subjects": [
+        "Machine Learning: Model Development and Evaluation (Scikit-learn, Pandas, Numpy)",
+        "Deep Learning: Neural Network Design and Training (TensorFlow, Keras)",
+        "MLOps and Deployment: Model Industrialization and Monitoring (Docker, Streamlit)"
+      ]
+    },
+    {
       "school": "JEDHA Bootcamp",
       "logo": "logos/jedha.svg",
       "degree": "Data Analyst",
