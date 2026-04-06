@@ -5,7 +5,7 @@ The result? **MobyDoc**: your new best friend when it comes to finding a medical
 
 ---
 
-## 💡 The Concept
+## The Concept
 
 **Problem:** Long wait times and appointment unavailability when you need a doctor *now*.  
 **Solution:** A streamlined app that instantly connects users to available medical consultations.
@@ -14,25 +14,25 @@ MobyDoc allows patients to **book last-minute appointments** and enables doctors
 
 ---
 
-## 👥 Team & Collaboration
+## Team & Collaboration
 
 This project was brought to life with the help of:
 
-- 👨‍💻 [Laurent Bouttier](https://www.linkedin.com/in/laurent-o-bouttier/)  
-- 👨‍💻 [David PASQUIET](https://www.linkedin.com/in/david-pasquiet-b08a0162/)  
-- 👩‍💻 [Donatienne Obry](https://www.linkedin.com/in/donatienne-obry-webmarketing/)  
+- [Laurent Bouttier](https://www.linkedin.com/in/laurent-o-bouttier/)  
+- [David PASQUIET](https://www.linkedin.com/in/david-pasquiet-b08a0162/)  
+- [Donatienne Obry](https://www.linkedin.com/in/donatienne-obry-webmarketing/)  
 
 ---
 
-## 🛠 Project Steps
+## Project Steps
 
-### 🔹 Ideation & Brainstorming
+### Ideation & Brainstorming
 
 We started by identifying a relevant and relatable issue: the frustration of securing urgent healthcare appointments. Based on personal experiences, **MobyDoc** was born.
 
 ---
 
-### 🔹 Landing Page Prototyping
+### Landing Page Prototyping
 
 To visualize our solution, we designed a responsive landing page using **HubSpot**. It showcased MobyDoc’s value proposition and call-to-action.
 
@@ -40,20 +40,20 @@ To visualize our solution, we designed a responsive landing page using **HubSpot
 
 ---
 
-### 🔹 Tracking User Activity with Analytics
+### Tracking User Activity with Analytics
 
 We integrated **Google Analytics** to monitor:
 
-- 📊 User sessions  
-- 📊 Traffic sources  
-- 📊 Conversions & events  
-- 📊 Audience insights  
+- User sessions  
+- Traffic sources  
+- Conversions & events  
+- Audience insights  
 
 ![Google Analytics Dashboard](/articles/illustrations/google_analytics.png)
 
 ---
 
-### 🔹 Launch Strategy & Digital Marketing
+### Launch Strategy & Digital Marketing
 
 We explored digital growth strategies, including:
 
@@ -65,31 +65,31 @@ All while learning how to target the right audience and interpret marketing metr
 
 ---
 
-## 🔑 Key Takeaways
+## Key Takeaways
 
-✅ Rapid ideation & prototyping  
-✅ Hands-on practice with real-world tools (HubSpot, Google Analytics)  
-✅ Foundational knowledge of landing pages and performance tracking  
-✅ Collaboration in a multidisciplinary team
+Rapid ideation & prototyping  
+Hands-on practice with real-world tools (HubSpot, Google Analytics)  
+Foundational knowledge of landing pages and performance tracking  
+Collaboration in a multidisciplinary team
 
 ---
 
-## 🌱 What's Next?
+## What's Next?
 
 Although **MobyDoc** is a fictional concept, the experience felt very real. From UX and design to analytics and marketing, this mini sprint gave us a **realistic preview of launching a tech product**.
 
 ---
 
-## 🙏 Credits & Mentors
+## Credits & Mentors
 
 Thank you to our instructors:
 
-- 🎓 [Tuka Bade](https://www.linkedin.com/in/tukanebaribade/)  
-- 🎓 [Gautier Artru](https://www.linkedin.com/in/gautier-artru/)
+- [Tuka Bade](https://www.linkedin.com/in/tukanebaribade/)  
+- [Gautier Artru](https://www.linkedin.com/in/gautier-artru/)
 
 And to my teammates for their creativity and team spirit!
 
 ---
 
-🔗 [Try MobyDoc (Demo Page)](https://lnkd.in/eXbyNrCb)
+[Try MobyDoc (Demo Page)](https://lnkd.in/eXbyNrCb)
 

@@ -5,7 +5,7 @@ The analysis spanned clinical, environmental, and behavioral data—and was buil
 
 ---
 
-## 🔍 Dataset Overview
+## Dataset Overview
 
 - **50,000 records** of patients
 - Quantitative variables: `Age`, `Air_Pollution`, `Alcohol_Use`, `Smoking`, `Obesity_Level`, `Genetic_Risk`
@@ -14,7 +14,7 @@ The analysis spanned clinical, environmental, and behavioral data—and was buil
 
 ---
 
-## 🧪 Step 1 – Correlation Analysis with SQL
+## Step 1 – Correlation Analysis with SQL
 
 To quantify the linear relationships between predictors and severity, I wrote custom SQL queries like this one:
 
@@ -46,11 +46,11 @@ SELECT
 FROM global_cancer_patients;
 ```
 
-🧠 **Results**: Smoking and genetic risk showed the highest correlations (~0.48 each).
+**Results**: Smoking and genetic risk showed the highest correlations (~0.48 each).
 
 ---
 
-## 🌲 Step 2 – Feature Importance with Random Forest
+## Step 2 – Feature Importance with Random Forest
 
 To move beyond linear assumptions, I used a Random Forest model to measure **relative importance**.
 
@@ -78,7 +78,7 @@ feature_importance = pd.Series(model.feature_importances_, index=X.columns).sort
 print(feature_importance)
 ```
 
-📊 **Top Factors by Importance**:
+**Top Factors by Importance**:
 - `Smoking`: 0.27  
 - `Genetic_Risk`: 0.26  
 - `Air_Pollution`: 0.16  
@@ -88,13 +88,13 @@ print(feature_importance)
 
 ---
 
-## 📈 Visual Summary (Metabase Dashboard)
+## Visual Summary (Metabase Dashboard)
 
 ![Cancer Dashboard](/articles/illustrations/dashboard1.png)
 
 ---
 
-## ✅ Key Findings
+## Key Findings
 
 - **Smoking** and **genetic risk** are consistently the most predictive factors, both linearly and via ML.
 - **Pollution and alcohol** are moderately influential.
@@ -107,7 +107,7 @@ print(feature_importance)
 
 ---
 
-## 🧠 Lessons Learned
+## Lessons Learned
 
 This project taught me how to:
 - Combine **low-code BI tools** with **custom SQL queries**

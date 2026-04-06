@@ -4,7 +4,7 @@
 
 ---
 
-## 🧭 Executive Summary
+## Executive Summary
 
 I ran a two‑part study to answer two questions HR teams ask all the time:
 
@@ -13,13 +13,13 @@ I ran a two‑part study to answer two questions HR teams ask all the time:
 
 **What I found**
 
-- 🎓 **Education** and 📈 **experience** are strong salary drivers; **job title** explains a large share of variance; **gender** differences exist but are smaller than role/experience effects.  
-- 🔥 **Perceived stress** is the strongest predictor of burnout probability; **very long workweeks** increase risk; **remote ratio** is not automatically protective — without guardrails it can amplify isolation.  
-- 📌 The models are intentionally simple (linear & logistic regression) to keep them **interpretable** and easy to deploy as rule‑of‑thumb companions to HR judgement.
+- **Education** and **experience** are strong salary drivers; **job title** explains a large share of variance; **gender** differences exist but are smaller than role/experience effects.  
+- **Perceived stress** is the strongest predictor of burnout probability; **very long workweeks** increase risk; **remote ratio** is not automatically protective — without guardrails it can amplify isolation.  
+- The models are intentionally simple (linear & logistic regression) to keep them **interpretable** and easy to deploy as rule‑of‑thumb companions to HR judgement.
 
 ---
 
-## 🗂️ Data at a Glance
+## Data at a Glance
 
 Two datasets were used:
 
@@ -30,7 +30,7 @@ Two datasets were used:
 
 ---
 
-## 🧪 Part 1 — **Salary Modelling** (Multiple Linear Regression)
+## Part 1 — **Salary Modelling** (Multiple Linear Regression)
 
 ### 1) Exploratory Analysis (selected visuals)
 
@@ -106,7 +106,7 @@ float(predicted_salary.iloc[0])
 
 ---
 
-## 🔥 Part 2 — **Burnout Risk** (Logistic Regression)
+## Part 2 — **Burnout Risk** (Logistic Regression)
 
 ### 1) Features & Modelling Strategy
 
@@ -188,12 +188,12 @@ float(logit.predict(test_person).iloc[0])
 # → 0.990265  (illustrative probability from a sample run)
 ```
 
-> 🔎 Treat predicted probabilities as **screening signals**.  
+> Treat predicted probabilities as **screening signals**.  
 > They are **not** diagnoses; use them to inform support workflows (e.g., nudges to managers, optional well‑being check‑ins).
 
 ---
 
-## 🧰 From Insight to Action — HR Playbook
+## From Insight to Action — HR Playbook
 
 **Compensation**  
 - Align salary bands with **education & experience ladders**; quantify role premia per market.  
@@ -208,7 +208,7 @@ float(logit.predict(test_person).iloc[0])
 
 ---
 
-## 🛠️ Tech Stack & Reproducibility
+## Tech Stack & Reproducibility
 
 - **Python** (pandas, seaborn/matplotlib), **statsmodels** (OLS/logit), **scikit‑learn** (metrics).  
 - Notebooks and scripts can be bundled as a small pipeline (EDA → modelling → scoring).  
@@ -216,7 +216,7 @@ float(logit.predict(test_person).iloc[0])
 
 ---
 
-## ✅ Key Takeaways (TL;DR)
+## Key Takeaways (TL;DR)
 
 - Salary: **education, experience, and job family** matter most; use **interpretable OLS** to expose drivers and ranges.  
 - Burnout: **stress and workload** are red flags; **logistic regression** offers a transparent score that HR can review alongside qualitative context.  

@@ -2,7 +2,7 @@ As part of the **Data Analysis Essentials** program at **Jedha Bootcamp**, I wor
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 The Titanic dataset offers a rich snapshot of 891 passengers, detailing:
 
@@ -15,9 +15,9 @@ This challenge is a classic introduction to machine learning and a great exercis
 
 ---
 
-## 🔍 Data Preparation & Cleaning
+## Data Preparation & Cleaning
 
-### 🔹 Feature Selection
+### Feature Selection
 To streamline the model, we removed non-essential columns such as:
 
 - Passenger ID  
@@ -25,7 +25,7 @@ To streamline the model, we removed non-essential columns such as:
 - Ticket Number  
 - Cabin Number  
 
-### 🔹 Handling Missing Values
+### Handling Missing Values
 - Age: Replaced missing values with the **mean age**
 - Embarked & Fare: Imputed using mode or median
 - Categorical encoding: Converted categorical features into numerical using one-hot encoding
@@ -33,7 +33,7 @@ To streamline the model, we removed non-essential columns such as:
 
 ---
 
-## 🧪 Model Building
+## Model Building
 
 We used a **Logistic Regression** model, ideal for binary classification problems like this one.  
 The dataset was split into:
@@ -45,11 +45,11 @@ The dataset was split into:
 
 ![Model Score](/articles/illustrations/score1.png)
 
-📈 The model achieved **80% accuracy**, showing a solid ability to generalize from the training data.
+The model achieved **80% accuracy**, showing a solid ability to generalize from the training data.
 
 ---
 
-## 📊 Key Visual Insights
+## Key Visual Insights
 
 ### **Age Distribution by Survival Status**
 Younger passengers—particularly children—had higher survival rates.
@@ -82,27 +82,27 @@ Higher-class passengers (1st and 2nd class) had much better odds of surviving th
 
 ---
 
-## 📌 Key Takeaways
+## Key Takeaways
 
-✅ **Gender mattered most** – being female dramatically increased survival odds  
-✅ **Class inequality** – 1st class had the highest survival rate  
-✅ **Children were prioritized** – especially those under 10  
-✅ **Boarding location** – Embarked C > Q > S in survival rate
-
----
-
-## 🛠 Technologies Used
-
-- 💻 **Python**  
-- 🐼 **Pandas** – Data manipulation  
-- 📊 **Seaborn** – Visualizations  
-- 🤖 **Scikit-learn** – Modeling  
+**Gender mattered most** – being female dramatically increased survival odds  
+**Class inequality** – 1st class had the highest survival rate  
+**Children were prioritized** – especially those under 10  
+**Boarding location** – Embarked C > Q > S in survival rate
 
 ---
 
-## 🙏 Acknowledgements
+## Technologies Used
+
+- **Python**  
+- **Pandas** – Data manipulation  
+- **Seaborn** – Visualizations  
+- **Scikit-learn** – Modeling  
+
+---
+
+## Acknowledgements
 
 Thanks to **Victor Salling** and **Raphael Rialland** for their feedback and guidance throughout this project.
 
-🔗 [Jedha Bootcamp](https://www.linkedin.com/company/jedhabootcamp/)  
-🔗 [Raphael Rialland](https://www.linkedin.com/in/raphael-rialland/)
+[Jedha Bootcamp](https://www.linkedin.com/company/jedhabootcamp/)  
+[Raphael Rialland](https://www.linkedin.com/in/raphael-rialland/)

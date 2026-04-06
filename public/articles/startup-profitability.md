@@ -2,15 +2,15 @@ As part of the **Data Analysis Essentials** program at **Jedha Bootcamp**, I wor
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 Startups face tough decisions when allocating limited resources. Should they prioritize R&D or pour funds into marketing? Does their geographic location matter? The objective of this project was to build a **regression model** that could provide data-driven answers to such questions by predicting a company’s profit using operational and financial metrics.
 
 ---
 
-## 🧪 Methodology
+## Methodology
 
-### 🔹 Data Exploration & Preparation
+### Data Exploration & Preparation
 
 We worked with a dataset of **50 startups**, each described by the following variables:
 
@@ -22,14 +22,14 @@ We worked with a dataset of **50 startups**, each described by the following var
 
 Initial exploration involved visualizing distributions, spotting outliers, and assessing relationships between features. For instance, early scatter plots hinted at a strong positive correlation between R&D investment and profit.
 
-### 🔹 Preprocessing
+### Preprocessing
 
 To prepare the data for modeling:
 
-- ✅ We **encoded the categorical “location” feature** using one-hot encoding.  
-- ✅ We **normalized** the numerical features to stabilize the training process and improve model performance.
+- We **encoded the categorical “location” feature** using one-hot encoding.  
+- We **normalized** the numerical features to stabilize the training process and improve model performance.
 
-### 🔹 Model Development
+### Model Development
 
 We split the dataset into:
 
@@ -40,7 +40,7 @@ We then trained a **Linear Regression model**, a reliable and interpretable algo
 
 ---
 
-## 📊 Model Performance & Visual Insights
+## Model Performance & Visual Insights
 
 The trained model achieved an impressive **93% R² score** on the test set, indicating that it successfully captured the patterns influencing profitability.
 
@@ -58,36 +58,36 @@ By examining the regression coefficients, we were able to interpret the influenc
 
 ---
 
-## 📌 Key Insights
+## Key Insights
 
-### ✅ R&D Investment: The Most Impactful Driver  
+### R&D Investment: The Most Impactful Driver  
 Among all variables, **R&D spending stood out as the strongest predictor** of profit. Startups that invested heavily in innovation and product development consistently reported higher profits. This aligns with the idea that strong technical foundations lead to long-term value.
 
-### ✅ Marketing: Still a Key Lever  
+### Marketing: Still a Key Lever  
 While not as powerful as R&D, **marketing expenditure** showed a positive correlation with profitability. Strategic marketing appears to amplify the value of good products, helping startups reach their audience effectively.
 
-### ✅ Administrative Costs: Neutral Influence  
+### Administrative Costs: Neutral Influence  
 Administrative spending had a weaker and less consistent relationship with profit, suggesting that these costs neither directly hinder nor boost profitability significantly.
 
-### ✅ Location: Surprisingly Irrelevant  
+### Location: Surprisingly Irrelevant  
 Contrary to expectations, **company location had little to no effect** on profit in this dataset. This could be due to the relatively uniform economic conditions across the sampled regions or a small sample size.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 This project was completed using:
 
-- 💻 **Python**  
-- 🐼 **Pandas** – Data manipulation  
-- 📊 **Seaborn** – Exploratory visualizations  
-- 🤖 **Scikit-learn** – Machine learning pipeline  
+- **Python**  
+- **Pandas** – Data manipulation  
+- **Seaborn** – Exploratory visualizations  
+- **Scikit-learn** – Machine learning pipeline  
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 Special thanks to **Raphael Rialland** for his mentorship and guidance throughout this project.
 
-📍 [Jedha Bootcamp](https://www.linkedin.com/company/jedhabootcamp/)  
-👨‍🏫 [Raphael Rialland](https://www.linkedin.com/in/raphael-rialland/)
+[Jedha Bootcamp](https://www.linkedin.com/company/jedhabootcamp/)  
+[Raphael Rialland](https://www.linkedin.com/in/raphael-rialland/)

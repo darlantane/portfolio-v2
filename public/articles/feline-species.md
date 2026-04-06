@@ -3,7 +3,7 @@ To see **how three popular breeds differ — Angora, Maine Coon and Ragdoll �
 
 ---
 
-## 🎯 Project Goal  
+## Project Goal  
 Create a visual workspace that quickly answers:
 
 1. **How do weight, length and body “thickness” evolve with age?**  
@@ -12,7 +12,7 @@ Create a visual workspace that quickly answers:
 
 ---
 
-## 📦 Dataset Snapshot  
+## Dataset Snapshot  
 
 | Metric | Value |
 |--------|-------|
@@ -43,7 +43,7 @@ ABS([Weight Z]) <= [Z Parameter]
 
 ---
 
-## 📊 Dashboard Tour  
+## Dashboard Tour  
 
 ### 1 · Ideal Body Zone (Scatter)
 
@@ -92,7 +92,7 @@ Breed‑specific zooms:
 
 ---
 
-## 🔑 Key Takeaways  
+## Key Takeaways  
 
 | Dimension | Stand‑out Insight |
 |-----------|------------------|
@@ -103,14 +103,14 @@ Breed‑specific zooms:
 
 ---
 
-## 🛠 Tools  
+## Tools  
 
 * **Tableau Public** – data modelling, calculated fields, dashboard layout  
 * **Excel** – initial cleaning (missing weights, unit checks)
 
 ---
 
-## 📌 Final Thoughts  
+## Final Thoughts  
 
 This study demonstrates how a few calculated fields and well‑chosen visuals can reveal **morphological signatures** within feline breeds. Whether you breed cats, work in veterinary science, or just love a good data viz, Tableau makes it easy to turn raw measurements into a story.
 

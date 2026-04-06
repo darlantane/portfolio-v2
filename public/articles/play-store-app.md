@@ -3,15 +3,15 @@ In this mini‑analytics project I used **BigQuery + Looker Studio** to explore 
 
 ---
 
-## 🎯 Project Goals
-1. **Quantify popularity**: downloads 📥 + ratings 📝  
+## Project Goals
+1. **Quantify popularity**: downloads + ratings  
 2. **Profile engagement**: which categories and content‑ratings spark the most feedback?  
 3. **Dissect sentiment drivers**: review length, “helpful” votes, and the dreaded word **“ads”**.  
 4. **Track reputation over time**: did updates break or save the user experience?
 
 ---
 
-## 🗃️ Data Snapshot
+## Data Snapshot
 | Metric | Value |
 | ------ | ----- |
 | Apps analysed | **217** |
@@ -21,10 +21,10 @@ In this mini‑analytics project I used **BigQuery + Looker Studio** to explore 
 
 ---
 
-## 🔧 Key SQL Snippets (BigQuery)
+## Key SQL Snippets (BigQuery)
 
 ```sql
--- ⭐ Average rating per app
+-- Average rating per app
 SELECT app_name,
        ROUND(AVG(review_score), 2) AS avg_score,
        COUNT(*) AS n_reviews
@@ -34,7 +34,7 @@ ORDER  BY n_reviews DESC;
 ```
 
 ```sql
--- 🔎 Ratings when reviews mention ads
+-- Ratings when reviews mention ads
 SELECT app_name,
        ROUND(AVG(review_score), 2) AS avg_score_ads
 FROM   `Play_Market.apps_reviews`
@@ -44,7 +44,7 @@ ORDER  BY avg_score_ads;
 ```
 
 ```sql
--- 📈 Daily score trend (for the line chart)
+-- Daily score trend (for the line chart)
 SELECT DATE(review_date) AS day,
        AVG(review_score) AS daily_score
 FROM   `Play_Market.apps_reviews`
@@ -54,7 +54,7 @@ ORDER  BY day;
 
 ---
 
-## 📊 Dashboard Walk‑through
+## Dashboard Walk‑through
 
 ### 1 · Popularity at a Glance
 ![Page 1 – Popularity](/articles/illustrations/page_1.png)
@@ -84,7 +84,7 @@ Trend line shows a fairly steady ★3.0‑3.2 average, with a dip in late 2023 
 
 ---
 
-## 🔑 Insights Recap
+## Insights Recap
 
 | Theme | What We Learned |
 | ----- | --------------- |
@@ -96,7 +96,7 @@ Trend line shows a fairly steady ★3.0‑3.2 average, with a dip in late 2023 
 
 ---
 
-## 🛠 Stack
+## Stack
 
 * **BigQuery** – SQL crunching over 5 GB of JSON exports  
 * **Looker Studio** – interactive dashboards, drill‑downs  
@@ -104,7 +104,7 @@ Trend line shows a fairly steady ★3.0‑3.2 average, with a dip in late 2023 
 
 ---
 
-## 📌 Take‑aways
+## Take‑aways
 
 Visual exploration + a few targeted SQL queries are enough to turn half a million Play Store reviews into actionable product signals:
 

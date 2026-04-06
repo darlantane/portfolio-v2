@@ -5,37 +5,37 @@ With serious implications for public health and climate policy, this project com
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 The goal was to create a model that could:
 
-- ✅ Help people anticipate pollution spikes and adapt their behavior  
-- ✅ Support policymakers in introducing preventive environmental measures
+- Help people anticipate pollution spikes and adapt their behavior  
+- Support policymakers in introducing preventive environmental measures
 
 ---
 
-## 🗃️ Dataset Overview
+## Dataset Overview
 
-- 📦 35,000+ rows  
-- 🏙️ 54 US cities  
-- 📅 2 years of data  
+- 35,000+ rows  
+- 54 US cities  
+- 2 years of data  
 
 We used a publicly available Kaggle dataset that included weather metrics, pollution measures (PM2.5, PM10, NO₂, CO, O₃), and temporal patterns.
 
 ---
 
-## 🔍 Data Cleaning & Feature Engineering
+## Data Cleaning & Feature Engineering
 
 To ensure reliable analysis:
 
-- 🧹 Removed irrelevant columns  
-- 🧩 Created a **composite pollution index**  
-- 🧱 Handled missing values  
-- 🕐 Added temporal features (like previous-day pollution levels)
+- Removed irrelevant columns  
+- Created a **composite pollution index**  
+- Handled missing values  
+- Added temporal features (like previous-day pollution levels)
 
 ---
 
-## 📈 Visual Correlations
+## Visual Correlations
 
 Despite expectations, we found **weak visual correlations** between pollution and weather indicators.
 
@@ -43,7 +43,7 @@ Despite expectations, we found **weak visual correlations** between pollution an
 
 ---
 
-## 🤖 Modeling Approach
+## Modeling Approach
 
 We tested several algorithms, including:
 
@@ -54,7 +54,7 @@ We refined our analysis by excluding **2020 data** (due to COVID-related behavio
 
 ---
 
-## 🧪 Best Model: Random Forest (Los Angeles)
+## Best Model: Random Forest (Los Angeles)
 
 ![Model Score & Feature Importance](/articles/illustrations/score2.png)
 
@@ -68,14 +68,14 @@ We refined our analysis by excluding **2020 data** (due to COVID-related behavio
 
 ---
 
-## 📌 Key Insights
+## Key Insights
 
-✅ **Wind speed**, **humidity**, and **temperature** were among the top predictors.  
-✅ The **proportion of people staying at home** (captured via mobility data) also had significant impact.
+**Wind speed**, **humidity**, and **temperature** were among the top predictors.  
+The **proportion of people staying at home** (captured via mobility data) also had significant impact.
 
 ---
 
-## ⚠️ Why Predictions Were Limited
+## Why Predictions Were Limited
 
 Despite solid modeling efforts, performance was hindered by:
 
@@ -85,42 +85,42 @@ Despite solid modeling efforts, performance was hindered by:
 
 ---
 
-## 🚀 How to Improve
+## How to Improve
 
 To enhance accuracy in future versions:
 
-- 📍 **Focus on one city at a time** to account for local dynamics  
-- 🌱 **Add more granular data**: industrial activity, vegetation, traffic, local policies, etc.  
-- 📊 Ensure more consistent and frequent data collection
+- **Focus on one city at a time** to account for local dynamics  
+- **Add more granular data**: industrial activity, vegetation, traffic, local policies, etc.  
+- Ensure more consistent and frequent data collection
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
-- 💻 **Python**  
-- 🐼 **Pandas**  
-- 📊 **Seaborn**  
-- 🌲 **Scikit-learn (RandomForestRegressor)**
+- **Python**  
+- **Pandas**  
+- **Seaborn**  
+- **Scikit-learn (RandomForestRegressor)**
 
 ---
 
-## 👥 Team & Credits
+## Team & Credits
 
 Big thanks to my amazing teammates:
 
-- 👨‍💻 [Louis Tronel](https://www.linkedin.com/in/louis-tronel-b3b5031b/)  
-- 👩‍💻 [Myriam Goyet](https://www.linkedin.com/in/myriamgoyet/)  
-- 👨‍💻 [Lionel TCHAMFONG](https://www.linkedin.com/in/lionel-tchamfong-productowner/)  
+- [Louis Tronel](https://www.linkedin.com/in/louis-tronel-b3b5031b/)  
+- [Myriam Goyet](https://www.linkedin.com/in/myriamgoyet/)  
+- [Lionel TCHAMFONG](https://www.linkedin.com/in/lionel-tchamfong-productowner/)  
 
 Special thanks to our mentors:
 
-- 🎓 [Victor Salling](https://www.linkedin.com/company/jedhabootcamp/)  
-- 🎓 [Raphael Rialland](https://www.linkedin.com/in/raphael-rialland/)
+- [Victor Salling](https://www.linkedin.com/company/jedhabootcamp/)  
+- [Raphael Rialland](https://www.linkedin.com/in/raphael-rialland/)
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 While our model didn’t achieve high predictive power, this project was an **incredible hands-on experience** in environmental analytics, data preprocessing, and team-based machine learning.
 
-🎉 It also marked the completion of my **Data Analysis Essentials certification** at **Jedha Bootcamp**!
+It also marked the completion of my **Data Analysis Essentials certification** at **Jedha Bootcamp**!
