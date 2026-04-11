@@ -90,6 +90,17 @@
   },
   "education": [
     {
+      "school": "Dataskills Academy",
+      "logo": "logos/DATA-SKILLS-ACADEMY.png",
+      "degree": "QA Tester",
+      "period": "August 2025 - November 2025",
+      "location": "Paris, France",
+      "subjects": [
+        "Test Automation: Automated test design and execution for web and applications (Selenium, Robot Framework, Jira, Squash)",
+        "Data-Driven Testing: Test strategy based on data analysis and datasets (Python, SQL, Power BI)"
+      ]
+    },
+    {
       "school": "Le Wagon",
       "logo": "logos/LeWagon.svg",
       "degree": "Data Science",
@@ -341,6 +352,18 @@
     }
   ],
   "experience": [
+    {
+      "title": "QA Tester",
+      "company": "Technova Consulting",
+      "location": "Paris, France",
+      "period": "November 2025",
+      "responsibilities": [
+        "Developed test plans, acceptance test cases, and database test scenarios",
+        "Automated regression tests using Robot Framework and Selenium WebDriver",
+        "Tracked and documented issues in Jira",
+        "Developed Python scripts to automate data consistency checks and generate execution logs"
+      ]
+    },
     {
       "title": "Supply Chain Manager",
       "company": "LA MATER INC.",
