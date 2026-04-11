@@ -404,7 +404,7 @@
   "articles": [
     {
       "id": 12,
-      "title": "👩‍💼📊 HR Analytics Deep‑Dive — What Data Says About Salary and Burnout Risk",
+      "title": "HR Analytics Deep‑Dive — What Data Says About Salary and Burnout Risk",
       "image": "/articles/covers/hr-analytics.png",
       "description": "I analysed HR data to explain salary drivers and estimate burnout risk with interpretable models—clear visuals and takeaways, not medical advice.",
       "mdLink": "articles/hr-analytics.md",
@@ -416,7 +416,7 @@
     },
     {
       "id": 11,
-      "title": "📱 Play Store Pulse – Mining 460 K Reviews from 217 Android Apps",
+      "title": "Play Store Pulse – Mining 460 K Reviews from 217 Android Apps",
       "image": "/articles/covers/play-store-app.png",
       "description": "A BigQuery + Looker Studio deep-dive into 217 Android apps and 460 K Play Store reviews—discover what drives downloads, ratings, and the dreaded “ad penalty.”",
       "mdLink": "articles/play-store-app.md",
@@ -428,7 +428,7 @@
     },
     {
       "id": 10,
-      "title": "🐾 Exploring Feline Morphology with Tableau — Angora, Maine Coon & Ragdoll",
+      "title": "Exploring Feline Morphology with Tableau — Angora, Maine Coon & Ragdoll",
       "image": "/articles/covers/feline-species.png",
       "description": "A step-by-step guide to creating a stunning dashboard in Power BI, from data import to visualization.",
       "mdLink": "articles/feline-species.md",
@@ -440,7 +440,7 @@
     },
     {
       "id": 9,
-      "title": "🎓 What Influences Exam Scores? A Visual Dive with Tableau",
+      "title": "What Influences Exam Scores? A Visual Dive with Tableau",
       "image": "/articles/covers/exam-score.png",
       "description": "A Tableau dashboard exploration of what impacts exam scores the most—stress, sleep, motivation, and more.",
       "mdLink": "articles/exam-score.md",
@@ -452,7 +452,7 @@
     },
     {
       "id": 8,
-      "title": "🧬 What Influences Cancer Severity? A Data Deep Dive with SQL & Machine Learning",
+      "title": "What Influences Cancer Severity? A Data Deep Dive with SQL & Machine Learning",
       "image": "/articles/covers/cancer-severity.png",
       "description": "A combined SQL and machine learning analysis on cancer severity: uncover the most impactful risk factors across 50,000 global patients.",
       "mdLink": "articles/cancer-severity.md",
@@ -464,7 +464,7 @@
     },
     {
       "id": 7,
-      "title": "🎮 What Makes a Video Game a Hit? Let’s Dive Into the Data",
+      "title": "What Makes a Video Game a Hit? Let’s Dive Into the Data",
       "image": "/articles/covers/video-game-success.png",
       "description": "A data deep-dive into what makes a video game successful—genres, pricing, platforms, and where to launch.",
       "mdLink": "articles/video-game-success.md",
@@ -476,7 +476,7 @@
     },
     {
       "id": 6,
-      "title": "🧘‍♂️ Mastering Git & GitHub basics as a Data Analyst",
+      "title": "Mastering Git & GitHub basics as a Data Analyst",
       "image": "/articles/covers/mastering-git.png",
       "description": "How I moved beyond the basics of Git and GitHub to truly understand version control—and why it’s now an essential part of my data analyst toolkit.",
       "mdLink": "articles/mastering-git.md",
@@ -487,7 +487,7 @@
     },
     {
       "id": 5,
-      "title": "🎬 Unlocking the Secrets of Box Office Success: A Power BI Film Analysis",
+      "title": "Unlocking the Secrets of Box Office Success: A Power BI Film Analysis",
       "image": "/articles/covers/imdb-films.png",
       "description": "Bridging the gap between theoretical machine learning concepts and their practical applications in real-world scenarios.",
       "mdLink": "articles/imdb-films.md",
@@ -499,7 +499,7 @@
     },
     {
       "id": 4,
-      "title": "🚨 No Appointments Available! Meet MobyDoc",
+      "title": "No Appointments Available! Meet MobyDoc",
       "image": "/articles/covers/mobydoc.png",
       "description": "MobyDoc: A fictional startup designed to solve urgent medical appointment scheduling with a real-world landing page and analytics setup.",
       "mdLink": "articles/mobydoc.md",
@@ -511,7 +511,7 @@
     },
     {
       "id": 3,
-      "title": "🌍 Can We Predict Air Pollution Levels in the US with Machine Learning?",
+      "title": "Can We Predict Air Pollution Levels in the US with Machine Learning?",
       "image": "/articles/covers/air-pollution.png",
       "description": "Can we use machine learning to forecast pollution levels in US cities? This project explores the limits of data and modeling in environmental prediction.",
       "mdLink": "articles/air-pollution.md",
@@ -523,7 +523,7 @@
     },
     {
       "id": 2,
-      "title": "🚢 Predicting Titanic Survivors with Machine Learning",
+      "title": "Predicting Titanic Survivors with Machine Learning",
       "image": "/articles/covers/titanic-survivors.png",
       "description": "Predict who survived the Titanic disaster using machine learning and data visualization.",
       "mdLink": "articles/titanic-survivors.md",
@@ -535,7 +535,7 @@
     },
     {
       "id": 1,
-      "title": "🚀 Can we predict a startup's profitability based on key business factors?",
+      "title": "Can we predict a startup's profitability based on key business factors?",
       "image": "/articles/covers/startup-profitability.png",
       "description": "How key business factors like R&D and marketing influence startup profitability through a predictive regression model?",
       "mdLink": "articles/startup-profitability.md",

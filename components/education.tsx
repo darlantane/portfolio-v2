@@ -41,7 +41,7 @@ export default function Education() {
                   <GraduationCap className="h-3 w-3 text-white" />
                 </div>
 
-                <img src={edu.logo} alt={`${edu.school} logo`} className="flex items-center justify-center ml-4 w-40 mb-4" />
+                <img src={edu.logo} alt={`${edu.school} logo`} className="flex items-center justify-center ml-4 w-24 mb-4" />
 
                 {/* Content */}
                 <Card className="tech-card">
