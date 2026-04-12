@@ -362,7 +362,8 @@
         "Automated regression tests using Robot Framework and Selenium WebDriver",
         "Tracked and documented issues in Jira",
         "Developed Python scripts to automate data consistency checks and generate execution logs"
-      ]
+      ],
+      "logo": "logos/lamater.png"
     },
     {
       "title": "Supply Chain Manager",
