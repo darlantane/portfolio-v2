@@ -52,9 +52,9 @@ export default function Skills() {
   return (
     <section id="skills" ref={ref} className="py-20 tech-section">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        /*initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }}*/
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Skills

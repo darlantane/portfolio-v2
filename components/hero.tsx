@@ -22,39 +22,39 @@ export default function Hero() {
         <motion.div
           /*initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col gap-6"*/
+          transition={{ duration: 0.8 }}*/
+          className="flex flex-col gap-6"
         >
           <div>
             <motion.p
               /*initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-primary font-medium mb-2 inline-block border border-primary/30 px-3 py-1 rounded-full text-sm"*/
+              transition={{ delay: 0.2, duration: 0.8 }}*/
+              className="text-primary font-medium mb-2 inline-block border border-primary/30 px-3 py-1 rounded-full text-sm"
             >
               Hello, I'm
             </motion.p>
             <motion.h1
               /*initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-4xl md:text-6xl font-bold tracking-tight mb-4 glow-text"*/
+              transition={{ delay: 0.3, duration: 0.8 }}*/
+              className="text-4xl md:text-6xl font-bold tracking-tight mb-4 glow-text"
             >
               {hero.name}
             </motion.h1>
             <motion.h2
               /*initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-2xl md:text-3xl text-foreground/80 font-medium mb-6"*/
+              transition={{ delay: 0.4, duration: 0.8 }}*/
+              className="text-2xl md:text-3xl text-foreground/80 font-medium mb-6"
             >
               {hero.title}
             </motion.h2>
             <motion.p
               /*initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-lg text-muted-foreground max-w-md"*/
+              transition={{ delay: 0.5, duration: 0.8 }}*/
+              className="text-lg text-muted-foreground max-w-md"
             >
               {hero.description}
             </motion.p>
@@ -63,8 +63,8 @@ export default function Hero() {
           <motion.div
             /*initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="flex gap-4"*/
+            transition={{ delay: 0.6, duration: 0.8 }}*/
+            className="flex gap-4"
           >
             <Button onClick={scrollToContact} size="lg" className="tech-button">
               Contact Me
@@ -79,8 +79,8 @@ export default function Hero() {
           <motion.div
             /*initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex gap-6 mt-2"*/
+            transition={{ delay: 0.7, duration: 0.8 }}*/
+            className="flex gap-6 mt-2"
           >
             {hero.socialLinks.map((link) => (
               <a
@@ -103,8 +103,8 @@ export default function Hero() {
         <motion.div
           /*initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="relative hidden md:block"*/
+          transition={{ duration: 0.8 }}*/
+          className="relative hidden md:block"
         >
           <DataVisualization />
         </motion.div>
@@ -113,8 +113,8 @@ export default function Hero() {
       <motion.div
         /*initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
-        className="flex justify-center mt-16 md:mt-24"*/
+        transition={{ delay: 1.2, duration: 0.8 }}*/
+        className="flex justify-center mt-16 md:mt-24"
       >
         <button
           onClick={() =>
