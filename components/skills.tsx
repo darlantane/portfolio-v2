@@ -64,21 +64,21 @@ export default function Skills() {
         <div className="space-y-12">
           {Object.entries(skillsByCategory).map(([category, categorySkills]) => (
             <motion.div
-              key={category}
+              /*key={category}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-6"
+              className="space-y-6"*/
             >
               <h3 className={`text-xl font-bold ${categoryColors[category] || "text-primary"}`}>{category}</h3>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                 {categorySkills.map((skill, index) => (
                   <motion.div
-                    key={index}
+                    /*key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                    transition={{ duration: 0.8, delay: 0.3 + index * 0.05 }}
+                    transition={{ duration: 0.8, delay: 0.3 + index * 0.05 }}*/
                   >
                     <Card className="tech-card h-full">
                       <CardContent className="pt-6 flex flex-col items-center justify-center h-full">

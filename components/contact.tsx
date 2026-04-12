@@ -121,9 +121,9 @@ export default function Contact() {
   return (
     <section id="contact" ref={ref} className="py-20 tech-section">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        /*initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }}*/
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Contact Me
@@ -132,9 +132,9 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            /*initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2 }}*/
           >
             <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
             <p className="text-muted-foreground mb-6">{contact.description}</p>
@@ -191,9 +191,9 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            /*initial={{ opacity: 0, x: 20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.3 }}*/
           >
             <Card className="tech-card">
               <CardContent className="pt-6">

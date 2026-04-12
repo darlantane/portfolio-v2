@@ -14,9 +14,9 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="py-20 tech-section">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        /*initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }}*/
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Professional Experience
@@ -40,10 +40,10 @@ export default function Experience() {
 
                 {/* Date badge */}
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
+                  /*initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className={`w-full md:w-5/12 flex ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"} mb-4 md:mb-0`}
+                  className={`w-full md:w-5/12 flex ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"} mb-4 md:mb-0`}*/
                 >
                   <div className="text-primary px-4 py-1 text-sm font-medium">
                   <div className="mb-4">
@@ -58,10 +58,10 @@ export default function Experience() {
 
                 {/* Job card */}
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
+                  /*initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="w-full md:w-5/12 ml-5 md:ml-0"
+                  className="w-full md:w-5/12 ml-5 md:ml-0"*/
                 >
                   <Card className="tech-card">
                     <CardHeader>

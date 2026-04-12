@@ -33,9 +33,9 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref} className="py-20 tech-section">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        /*initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }}*/
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Projects
@@ -61,10 +61,10 @@ export default function Projects() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
             <motion.div
-              key={index}
+              /*key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
+              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
             >
               <Card className="h-full flex flex-col tech-card">
                 <CardHeader>

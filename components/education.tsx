@@ -14,9 +14,9 @@ export default function Education() {
   return (
     <section id="education" ref={ref} className="py-20 tech-section">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        /*initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }}*/
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Education
@@ -29,11 +29,11 @@ export default function Education() {
 
           {education.map((edu, index) => (
             <motion.div
-              key={index}
+              /*key={index}
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
-              className="tech-timeline-item"
+              className="tech-timeline-item"*/
             >
               <div className="relative">
                 {/* Timeline dot with icon */}

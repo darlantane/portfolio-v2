@@ -15,9 +15,9 @@ export default function Certifications() {
   return (
     <section id="certifications" ref={ref} className="py-20 tech-section">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        /*initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }}*/
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Certifications
@@ -27,10 +27,10 @@ export default function Certifications() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((certification, index) => (
             <motion.div
-              key={index}
+              /*key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
+              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
             >
               <Card className="h-full flex flex-col tech-card">
                 <CardContent className="pt-6 flex flex-col h-full">

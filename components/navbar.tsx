@@ -38,14 +38,14 @@ function NavbarComponent() {
   return (
     <>
       <motion.nav
-        initial={{ y: -100 }}
+        /*initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`fixed w-full z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-background/80 backdrop-blur-md shadow-md py-2"
             : "bg-transparent py-4"
-        }`}
+        }`}*/
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold tracking-tighter">
@@ -131,11 +131,11 @@ function NavbarComponent() {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
+          /*initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
-          className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg z-40 py-4 border-b"
+          className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg z-40 py-4 border-b"*/
         >
           <div className="container mx-auto px-4 flex flex-col gap-4">
             {navLinks.map((link) => {
