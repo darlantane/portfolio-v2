@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
+import About from "@/components/about";
 import Footer from "@/components/footer";
 
 import { Toaster } from "react-hot-toast";
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <div className="container mx-auto px-4">
         <Hero />
+        <About />
       </div>
       <Footer />
       <Toaster
