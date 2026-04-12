@@ -21,6 +21,9 @@ export const metadata = {
   generator: "v0.dev",
 }
 
+// Toggle global animations
+const animationsEnabled = process.env.NEXT_PUBLIC_ANIMATIONS === "true"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`font-space ${fontSans.variable} ${spaceGrotesk.variable}`}>
-        <MotionConfig reducedMotion="always" transition={{ duration: 0 }}>
+        <MotionConfig
+          reducedMotion={animationsEnabled ? "user" : "always"}
+          transition={{ duration: animationsEnabled ? 0.4 : 0 }}
+        >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
           </ThemeProvider>
@@ -38,6 +44,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
