@@ -2,7 +2,7 @@ import Navbar from "@/components/navbar";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 
-export default function SkillsPage() {
+export default function ExperiencePage() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />

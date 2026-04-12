@@ -2,7 +2,7 @@ import Navbar from "@/components/navbar";
 import Education from "@/components/education";
 import Footer from "@/components/footer";
 
-export default function SkillsPage() {
+export default function EducationPage() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />

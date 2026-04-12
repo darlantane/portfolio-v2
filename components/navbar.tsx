@@ -1,26 +1,22 @@
 "use client";
 
-import { useState, useEffect, use, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Menu, X, Sun, Moon, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import data from "@/data/data.json";
-import { redirect, usePathname, useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function NavbarComponent() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const { navLinks } = data;
-  // Update the navbar component to include active section indicator
-  // First, add a state to track the active section
-  const [activeSection, setActiveSection] = useState("");
 
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const anchor = searchParams.get("anchor");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,62 +25,15 @@ function NavbarComponent() {
       } else {
         setIsScrolled(false);
       }
-
-      // Determine which section is currently in view
-      const sections = navLinks.map((link) => document.getElementById(link.id));
-      const scrollPosition = window.scrollY + 100; // Offset for better detection
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(navLinks[i].id);
-          break;
-        }
-      }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call once to set initial state
+    handleScroll();
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [navLinks]);
-
-  const scrollToSection = (id: string) => {
-    setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    const offset = 80;
-    const bodyRect = document.body.getBoundingClientRect().top;
-    const elementRect = element?.getBoundingClientRect().top ?? 0;
-    const elementPosition = elementRect - bodyRect;
-    const offsetPosition = elementPosition - offset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  };
-
-  const handleClick = (linkId: string) => {
-    if (["articles"].includes(linkId)) {
-      redirect(`/${linkId}`);
-    } else {
-      if (pathname !== "/") {
-        redirect(`/?anchor=${linkId}`);
-      }
-      scrollToSection(linkId);
-    }
-  };
-
-  useEffect(() => {
-    if (anchor) {
-      const element = document.getElementById(anchor);
-      if (element) {
-        scrollToSection(anchor);
-        window.history.pushState({}, "", pathname);
-      }
-    }
-  }, [anchor]);
+  }, []);
 
   return (
     <>
@@ -99,16 +48,7 @@ function NavbarComponent() {
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <a
-            href="/"
-            className="text-xl font-bold tracking-tighter"
-            onClick={(e) => {
-              if (pathname === "/") {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }
-            }}
-          >
+          <Link href="/" className="text-xl font-bold tracking-tighter">
             <Image
               src="/favicon.ico"
               alt="DT Logo"
@@ -116,28 +56,31 @@ function NavbarComponent() {
               height={40}
               className="h-10 w-auto"
             />
-          </a>
+          </Link>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => handleClick(link.id)}
-                className={`text-foreground/80 hover:text-primary transition-colors relative nav-link ${
-                  activeSection === link.id ? "active text-primary" : ""
-                }`}
-              >
-                {link.text}
-                <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
-                    activeSection === link.id
-                      ? "w-full"
-                      : "w-0 group-hover:w-full"
+            {navLinks.map((link) => {
+              const href = link.id === "home" ? "/" : `/${link.id}`;
+
+              return (
+                <Link
+                  key={link.id}
+                  href={href}
+                  className={`text-foreground/80 hover:text-primary transition-colors relative ${
+                    pathname === href ? "text-primary" : ""
                   }`}
-                ></span>
-              </button>
-            ))}
+                >
+                  {link.text}
+                  <span
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+                      pathname === href ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  ></span>
+                </Link>
+              );
+            })}
+
             <Button
               variant="ghost"
               size="icon"
@@ -168,6 +111,7 @@ function NavbarComponent() {
                 <Moon className="h-5 w-5" />
               )}
             </Button>
+
             <Button
               variant="ghost"
               size="icon"
@@ -194,19 +138,24 @@ function NavbarComponent() {
           className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg z-40 py-4 border-b"
         >
           <div className="container mx-auto px-4 flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => handleClick(link.id)}
-                className={`py-2 text-left transition-colors ${
-                  activeSection === link.id
-                    ? "text-primary"
-                    : "text-foreground/80 hover:text-primary"
-                }`}
-              >
-                {link.text}
-              </button>
-            ))}
+            {navLinks.map((link) => {
+              const href = link.id === "home" ? "/" : `/${link.id}`;
+
+              return (
+                <Link
+                  key={link.id}
+                  href={href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-2 text-left transition-colors ${
+                    pathname === href
+                      ? "text-primary"
+                      : "text-foreground/80 hover:text-primary"
+                  }`}
+                >
+                  {link.text}
+                </Link>
+              );
+            })}
           </div>
         </motion.div>
       )}
