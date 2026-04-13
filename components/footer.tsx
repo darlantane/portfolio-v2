@@ -18,8 +18,8 @@ export default function Footer() {
         <motion.div
           /*initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col items-center"*/
+          transition={{ duration: 0.8 }}*/
+          className="flex flex-col items-center"
         >
           <Button
             variant="outline"

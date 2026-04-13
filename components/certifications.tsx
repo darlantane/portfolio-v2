@@ -16,8 +16,8 @@ export default function Certifications() {
     <section id="certifications" ref={ref} className="py-20 tech-section">
       <motion.div
         /*initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8 }}*/
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}*/
+        transition={{ duration: 0.8 }}
       >
         <h2 className="text-3xl font-bold mb-2 tech-heading">
           <span className="text-primary">#</span> Certifications
@@ -29,8 +29,8 @@ export default function Certifications() {
             <motion.div
               /*key={index}
               initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}*/
+              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
             >
               <Card className="h-full flex flex-col tech-card">
                 <CardContent className="pt-6 flex flex-col h-full">

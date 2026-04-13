@@ -67,8 +67,8 @@ export default function Skills() {
               /*key={category}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-6"*/
+              transition={{ duration: 0.8, delay: 0.2 }}*/
+              className="space-y-6"
             >
               <h3 className={`text-xl font-bold ${categoryColors[category] || "text-primary"}`}>{category}</h3>
 

@@ -246,11 +246,5 @@
   display: none; /* Hide this since we're using the span for the underline */
 }
 
-*,
-*::before,
-*::after {
-  animation: none !important;
-  transition: none !important;
-  transform: none !important;
-}
+
 

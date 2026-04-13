@@ -32,8 +32,8 @@ export default function Education() {
               /*key={index}
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
-              className="tech-timeline-item"*/
+              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
+              className="tech-timeline-item"
             >
               <div className="relative">
                 {/* Timeline dot with icon */}

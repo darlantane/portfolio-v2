@@ -42,8 +42,8 @@ export default function Experience() {
                 <motion.div
                   /*initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className={`w-full md:w-5/12 flex ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"} mb-4 md:mb-0`}*/
+                  transition={{ duration: 0.8, delay: 0.2 }}*/
+                  className={`w-full md:w-5/12 flex ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"} mb-4 md:mb-0`}
                 >
                   <div className="text-primary px-4 py-1 text-sm font-medium">
                   <div className="mb-4">
@@ -60,8 +60,8 @@ export default function Experience() {
                 <motion.div
                   /*initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                  className="w-full md:w-5/12 ml-5 md:ml-0"*/
+                  transition={{ duration: 0.8, delay: 0.3 }}*/
+                  className="w-full md:w-5/12 ml-5 md:ml-0"
                 >
                   <Card className="tech-card">
                     <CardHeader>

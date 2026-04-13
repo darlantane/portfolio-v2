@@ -34,8 +34,8 @@ export default function About() {
                 /*key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
-                className="text-muted-foreground"*/
+                transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
+                className="text-muted-foreground"
               >
                 {paragraph}
               </motion.p>
@@ -44,8 +44,8 @@ export default function About() {
             <motion.div
               /*initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="mt-8"*/
+              transition={{ duration: 0.8, delay: 0.5 }}*/
+              className="mt-8"
             >
               <h3 className="text-lg font-semibold mb-3">Languages</h3>
               <div className="flex gap-2 flex-wrap">
@@ -62,8 +62,8 @@ export default function About() {
             <motion.div
               /*initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-4"*/
+              transition={{ duration: 0.8, delay: 0.6 }}*/
+              className="mt-4"
             >
               <h3 className="text-lg font-semibold mb-3">Interests</h3>
               <div className="flex gap-2 flex-wrap">
@@ -82,8 +82,8 @@ export default function About() {
           <motion.div
             /*initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="tech-card p-6"*/
+            transition={{ duration: 0.8, delay: 0.3 }}*/
+            className="tech-card p-6"
           >
 
             <div className="flex flex-col gap-6">
@@ -96,8 +96,8 @@ export default function About() {
                       /*key={index}
                       initial={{ opacity: 0, x: -20 }}
                       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                      transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
-                      className="flex gap-3"*/
+                      transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}*/
+                      className="flex gap-3"
                     >
                       <div className="flex flex-col items-center">
                         <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs">
