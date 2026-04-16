@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  /*:root {
     --background: 0 0% 96%;
     --foreground: 0 0% 21%;
     --card: 0 0% 98%;
@@ -24,16 +24,46 @@
     --input: 0 0% 89.8%;
     --ring: 90 65% 41%;
     --radius: 0.25rem; /* Reduced from 0.5rem to 0.25rem for sharper corners */
-
+    
     /* Custom colors for different skill categories */
-    --blue-500: 213 94% 68%;
+    /*--blue-500: 213 94% 68%;
     --green-500: 90 65% 41%;
     --purple-500: 270 61% 71%;
     --amber-500: 39 100% 50%;
 
     /* Font family */
-    --font-space: "Space Grotesk", sans-serif;
-  }
+    /*--font-space: "Space Grotesk", sans-serif;
+  }*/
+  
+
+  :root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 0%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 0%;
+
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 0 0% 0%;
+
+  --muted: 0 0% 95%;
+  --muted-foreground: 0 0% 40%;
+
+  --accent: 0 0% 90%;
+  --accent-foreground: 0 0% 0%;
+
+  --border: 0 0% 80%;
+  --input: 0 0% 80%;
+  --ring: 0 0% 0%;
+
+  --radius: 0rem;
+}
 
   .dark {
     --background: 0 0% 17%;
