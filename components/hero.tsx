@@ -18,12 +18,13 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8 tech-section">
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      {/*<div className="grid md:grid-cols-2 gap-8 items-center">*/}
+      <div className="flex flex-col items-center text-center gap-8">
         <motion.div
           /*initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}*/
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-6 items-center text-center"
         >
           <div>
             <motion.p
@@ -54,7 +55,7 @@ export default function Hero() {
               /*initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}*/
-              className="text-lg text-muted-foreground max-w-md"
+              className="text-lg text-muted-foreground max-w-md mx-auto"
             >
               {hero.description}
             </motion.p>
@@ -64,7 +65,7 @@ export default function Hero() {
             /*initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}*/
-            className="flex gap-4"
+            className="flex gap-4 justify-center"
           >
             <Button onClick={scrollToContact} size="lg" className="tech-button">
               Contact Me
@@ -80,7 +81,7 @@ export default function Hero() {
             /*initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.8 }}*/
-            className="flex gap-6 mt-2"
+            className="flex gap-6 mt-2 justify-center"
           >
             {hero.socialLinks.map((link) => (
               <a
@@ -116,7 +117,7 @@ export default function Hero() {
         transition={{ delay: 1.2, duration: 0.8 }}*/
         className="flex justify-center mt-16 md:mt-24"
       >
-        <button
+        {/*<button
           onClick={() =>
             document.getElementById("about")?.scrollIntoView({
               behavior: "smooth",
@@ -127,7 +128,7 @@ export default function Hero() {
           aria-label="Scroll down"
         >
           <ArrowDown className="h-6 w-6" />
-        </button>
+        </button>*/}
       </motion.div>
     </section>
   )
