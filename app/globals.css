@@ -114,7 +114,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, transparent, hsl(var(--primary)), transparent);
+  /*background: linear-gradient(90deg, transparent, hsl(var(--primary)), transparent);*/
 }
 
 .tech-card::after {
@@ -142,7 +142,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, transparent, hsl(var(--amber-500)), transparent);
+  /*background: linear-gradient(90deg, transparent, hsl(var(--amber-500)), transparent);*/
 }
 
 .tech-card-error::after {
@@ -177,17 +177,17 @@
 }
 
 .tech-heading {
-  @apply relative inline-flex items-center;
+  /*@apply relative inline-flex items-center;*/
 }
 
 .tech-heading::before {
   content: "";
-  @apply absolute -left-4 h-full w-1 bg-primary;
+  /*@apply absolute -left-4 h-full w-1 bg-primary;*/
 }
 
 .tech-badge {
-  @apply relative overflow-hidden bg-secondary/50 text-secondary-foreground;
-  backdrop-filter: blur(5px);
+  /*@apply relative overflow-hidden bg-secondary/50 text-secondary-foreground;
+  backdrop-filter: blur(5px);*/
   border-radius: 0.25rem; /* Sharper corners */
 }
 
