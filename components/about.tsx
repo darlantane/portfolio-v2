@@ -26,8 +26,8 @@ export default function About() {
         </h2>
         <div className="w-20 h-1 bg-primary mb-8"></div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          <div className="space-y-4">
+        <div className="grid md:grid-cols-1 gap-8 items-start max-w-3xl">
+          <div className="space-y-8">
 
             {about.paragraphs.map((paragraph, index) => (
               <motion.p
@@ -74,16 +74,16 @@ export default function About() {
                 ))}
               </div>
             </motion.div>
-            <Button asChild variant="default" className="tech-button">
+            {/*<Button asChild variant="default" className="tech-button">
               <Link href={`/articles`}>Read my technical blog</Link>
-            </Button>
+            </Button>*/}
           </div>
           
           <motion.div
             /*initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.8, delay: 0.3 }}*/
-            className="tech-card p-6"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="tech-card p-6"*/
           >
 
             <div className="flex flex-col gap-6">

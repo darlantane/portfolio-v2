@@ -24,10 +24,10 @@ export default function Skills() {
   )
 
   const categoryColors: Record<string, string> = {
-    "Programming Languages": "text-blue-500",
-    "Data Analysis Tools": "text-green-500",
-    "Visualization Tools": "text-purple-500",
-    Other: "text-amber-500",
+    "Programming Languages": "text-black-500",
+    "Data Analysis Tools": "text-black-500",
+    "Visualization Tools": "text-black-500",
+    Other: "text-black-500",
   }
 
   // Map of skill names to their logo URLs

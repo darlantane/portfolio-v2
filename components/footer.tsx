@@ -21,7 +21,7 @@ export default function Footer() {
           transition={{ duration: 0.8 }}*/
           className="flex flex-col items-center"
         >
-          <Button
+          {/*<Button
             variant="outline"
             size="icon"
             onClick={scrollToTop}
@@ -29,7 +29,7 @@ export default function Footer() {
             aria-label="Scroll to top"
           >
             <MoveUp className="h-5 w-5" />
-          </Button>
+          </Button>*/}
 
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold glow-text">Darlan Tane</h2>

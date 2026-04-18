@@ -49,13 +49,14 @@ function NavbarComponent() {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold tracking-tighter">
-            <Image
+            {/*<Image
               src="/favicon.ico"
               alt="DT Logo"
               width={40}
               height={40}
               className="h-10 w-auto"
-            />
+            />*/}
+            HOME
           </Link>
 
           {/* Desktop menu */}
@@ -81,7 +82,7 @@ function NavbarComponent() {
               );
             })}
 
-            <Button
+            {/*<Button
               variant="ghost"
               size="icon"
               aria-label="Toggle Theme"
@@ -93,7 +94,7 @@ function NavbarComponent() {
               ) : (
                 <Moon className="h-5 w-5" />
               )}
-            </Button>
+            </Button>*/}
           </div>
 
           {/* Mobile menu button */}

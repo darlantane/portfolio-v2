@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { GraduationCap, MapPin } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+/*import { Card, CardContent } from "@/components/ui/card"*/
 import data from "@/data/data.json"
 
 export default function Education() {
@@ -25,27 +25,27 @@ export default function Education() {
 
         <div className="relative max-w-3xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-primary/30"></div>
+          <div /*className="absolute left-0 top-0 bottom-0 w-0.5 bg-primary/30"*/></div>
 
           {education.map((edu, index) => (
             <motion.div
               /*key={index}
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
-              className="tech-timeline-item"
+              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
+              className="tech-timeline-item"*/
             >
               <div className="relative">
                 {/* Timeline dot with icon */}
-                <div className="absolute -left-8 top-0 w-7 h-7 rounded-full bg-primary flex items-center justify-center">
+                {/*<div className="absolute -left-8 top-0 w-7 h-7 rounded-full bg-primary flex items-center justify-center">
                   <GraduationCap className="h-3 w-3 text-white" />
-                </div>
+                </div>*/}
 
                 <img src={edu.logo} alt={`${edu.school} logo`} className="flex items-center justify-center ml-4 w-24 mb-4" />
 
                 {/* Content */}
-                <Card className="tech-card">
-                  <CardContent className="pt-6">
+                <div /*className="tech-card"*/>
+                  <div className="pt-6">
                     <div className="flex flex-col md:flex-row md:items-start gap-4">
                       <div className="md:w-1/3">
                         <div className="text-primary font-bold text-lg mb-2">{edu.period}</div>
@@ -69,8 +69,8 @@ export default function Education() {
                         </div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               </div>
             </motion.div>
           ))}

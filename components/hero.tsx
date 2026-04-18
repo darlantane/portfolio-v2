@@ -19,12 +19,12 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8 tech-section">
       {/*<div className="grid md:grid-cols-2 gap-8 items-center">*/}
-      <div className="flex flex-col items-center text-center gap-8">
+      <div className="flex flex-col items-center gap-8">
         <motion.div
           /*initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}*/
-          className="flex flex-col gap-6 items-center text-center"
+          className="flex flex-col gap-6 items-start text-left max-w-2xl"
         >
           <div>
             <motion.p
@@ -67,14 +67,14 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}*/
             className="flex gap-4 justify-center"
           >
-            <Button onClick={scrollToContact} size="lg" className="tech-button">
+            {/*<Button onClick={scrollToContact} size="lg" className="tech-button">
               Contact Me
             </Button>
             <Button variant="outline" size="lg" asChild className="tech-button">
               <a href={hero.resumeLink} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
-            </Button>
+            </Button>*/}
           </motion.div>
 
           <motion.div

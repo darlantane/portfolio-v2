@@ -195,7 +195,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.8, delay: 0.3 }}*/
           >
-            <Card className="tech-card">
+            {/*<Card className="tech-card">
               <CardContent className="pt-6">
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center py-8 text-center">
@@ -286,7 +286,7 @@ export default function Contact() {
                   </form>
                 )}
               </CardContent>
-            </Card>
+            </Card>*/}
           </motion.div>
         </div>
       </motion.div>

@@ -1,6 +1,10 @@
 {
   "navLinks": [
     {
+      "id": "articles",
+      "text": "Blog"
+    },
+    {
       "id": "about",
       "text": "About"
     },
@@ -27,10 +31,6 @@
     {
       "id": "contact",
       "text": "Contact"
-    },
-    {
-      "id": "articles",
-      "text": "Blog"
     }
   ],
   "hero": {
@@ -406,7 +406,7 @@
     "email": "darlan.tane@gmail.com",
     "phone": "+33 6 09 34 00 20",
     "location": "Paris, France",
-    "description": "Interested in collaborating or have a project in mind? Feel free to reach out to me using the contact form or through my email or phone."
+    "description": "Interested in collaborating or have a project in mind? Feel free to reach out to me through my email or phone."
   },
   "footer": {
     "copyright": "© 2025 Darlan Tane. All rights reserved.",

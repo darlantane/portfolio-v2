@@ -25,25 +25,25 @@ export default function Experience() {
 
         <div className="relative">
           {/* Vertical timeline line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/30"></div>
+          {/*<div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/30"></div>*/}
 
           <div className="space-y-16">
             {experience.map((job, index) => (
               <div
                 key={index}
-                className={`relative flex flex-col md:flex-row gap-4 md:gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
+                className={`relative flex flex-col md:flex-row items-start gap-6`}
               >
                 {/* Timeline bullet with icon */}
-                {index !== 0 && <div className="absolute left-0 -top-12 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10">
+                {/*{index !== 0 && <div className="absolute left-0 -top-12 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10">
                   <Briefcase className="h-4 w-4 text-primary" />
-                </div>}
+                </div>}*/}
 
                 {/* Date badge */}
                 <motion.div
                   /*initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.8, delay: 0.2 }}*/
-                  className={`w-full md:w-5/12 flex ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"} mb-4 md:mb-0`}
+                  className={`w-full md:w-2/12 flex mb-4 md:mb-0`}
                 >
                   <div className="text-primary px-4 py-1 text-sm font-medium">
                   <div className="mb-4">
@@ -55,6 +55,7 @@ export default function Experience() {
                     className="flex items-center justify-center ml-4 max-w-40" />
                   </div>
                 </motion.div>
+                
 
                 {/* Job card */}
                 <motion.div
@@ -63,7 +64,7 @@ export default function Experience() {
                   transition={{ duration: 0.8, delay: 0.3 }}*/
                   className="w-full md:w-5/12 ml-5 md:ml-0"
                 >
-                  <Card className="tech-card">
+                  <div /*className="tech-card"*/>
                     <CardHeader>
                       <CardTitle className="text-xl">{job.title}</CardTitle>
                       <CardDescription className="flex flex-col gap-1">
@@ -78,7 +79,7 @@ export default function Experience() {
                         ))}
                       </ul>
                     </CardContent>
-                  </Card>
+                  </div>
                 </motion.div>
               </div>
             ))}
