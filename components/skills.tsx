@@ -80,7 +80,7 @@ export default function Skills() {
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.8, delay: 0.3 + index * 0.05 }}*/
                   >
-                    <Card className="tech-card h-full">
+                    <div>
                       <CardContent className="pt-6 flex flex-col items-center justify-center h-full">
                         <div className="w-16 h-16 mb-4 relative flex items-center justify-center">
                           {skillLogos[skill.name] ? (
@@ -99,7 +99,7 @@ export default function Skills() {
                         </div>
                         <h4 className="font-medium text-center">{skill.name}</h4>
                       </CardContent>
-                    </Card>
+                    </div>
                   </motion.div>
                 ))}
               </div>

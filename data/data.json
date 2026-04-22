@@ -427,6 +427,18 @@
   },
   "articles": [
     {
+      "id": 13,
+      "title": "Understanding Neural Networks from Scratch with Micrograd",
+      "image": "/articles/covers/micrograd.png",
+      "description": "I rebuilt the fundamentals of a neural network without using frameworks like PyTorch or TensorFlow.",
+      "mdLink": "articles/micrograd.md",
+      "gitHubLink": "https://github.com/darlantane/building-micrograd",
+      "date": "2026-04-21",
+      "author": "Darlan Tane",
+      "readingTime": "7 min",
+      "relatedArticleIds": [8, 9]
+    },
+    {
       "id": 12,
       "title": "HR Analytics Deep‑Dive — What Data Says About Salary and Burnout Risk",
       "image": "/articles/covers/hr-analytics.png",

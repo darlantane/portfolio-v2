@@ -58,7 +58,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-6">
           {filteredProjects.map((project, index) => (
             <motion.div
               /*key={index}
@@ -66,7 +66,7 @@ export default function Projects() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}*/
             >
-              <Card className="h-full flex flex-col tech-card">
+              <div className="h-full flex flex-col">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div className="p-2 rounded-md bg-primary/10">{getProjectIcon(project.type)}</div>
@@ -96,7 +96,7 @@ export default function Projects() {
                     </Button>
                   )}
                 </CardFooter>
-              </Card>
+              </div>
             </motion.div>
           ))}
         </div>
