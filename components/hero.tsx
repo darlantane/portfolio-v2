@@ -17,7 +17,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8 tech-section">
+    <section className="min-h-[80vh] flex flex-col justify-start pt-48 pb-8">
       {/*<div className="grid md:grid-cols-2 gap-8 items-center">*/}
       <div className="flex flex-col items-center gap-8">
         <motion.div
