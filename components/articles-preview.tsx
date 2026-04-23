@@ -11,11 +11,6 @@ export default function ArticlesPreview() {
 
   return (
     <section className="max-w-4xl mx-auto pb-32">
-      <h2 className="text-3xl font-bold mb-2 tech-heading">
-        <span className="text-primary">#</span> Articles
-      </h2>
-      <div className="w-20 h-1 bg-primary mb-8"></div>
-
       <div className="space-y-4">
         {sortedArticles.map((article) => (
           <div
