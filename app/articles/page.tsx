@@ -87,10 +87,10 @@ export default function ArticlesPage() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <div className="text-sm text-muted-foreground">
+                    {/*<div className="text-sm text-muted-foreground">
                       By{" "}
                       <span className="text-foreground">{article.author}</span>
-                    </div>
+                    </div>*/}
                   </CardContent>
                   <CardFooter className="flex justify-between">
                     <Button asChild variant="default" className="tech-button">
