@@ -48,7 +48,7 @@ export default function ArticlesPage() {
               .map((article) => (
                 <Card
                   key={article.id}
-                  className="tech-card overflow-hidden flex flex-col h-full"
+                  className="overflow-hidden flex flex-col h-full"
                 >
                   <div className="relative h-48 w-full">
                     <Image
