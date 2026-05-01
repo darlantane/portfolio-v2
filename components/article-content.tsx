@@ -57,7 +57,7 @@ export default function ArticleContent({ mdLink }: ArticleContentProps) {
   }
 
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:text-foreground prose-a:text-primary">
+    <div className="prose prose-lg max-w-none text-black prose-headings:text-black prose-a:text-black">
       <ReactMarkdown
         rehypePlugins={[rehypeHighlight, rehypeRaw]}
         remarkPlugins={[remarkGfm]}

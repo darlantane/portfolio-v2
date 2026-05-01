@@ -17,7 +17,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="min-h-[80vh] flex flex-col justify-start pt-36 pb-8">
+    <section className="min-h-[60vh] flex flex-col justify-start pt-36 pb-8">
       {/*<div className="grid md:grid-cols-2 gap-8 items-center">*/}
       <div className="flex flex-col items-center gap-8">
         <motion.div
@@ -80,10 +80,10 @@ export default function Hero() {
           <motion.div
             /*initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7, duration: 0.8 }}*/
-            className="flex gap-6 mt-2 justify-center"
+            transition={{ delay: 0.7, duration: 0.8 }}
+            className="flex gap-6 mt-2 justify-center"*/
           >
-            {hero.socialLinks.map((link) => (
+            {/*{hero.socialLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.url}
@@ -97,7 +97,7 @@ export default function Hero() {
                 {link.name === "Mail" && <Mail className="h-6 w-6" />}
                 <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
-            ))}
+            ))}*/}
           </motion.div>
         </motion.div>
 
@@ -114,8 +114,8 @@ export default function Hero() {
       <motion.div
         /*initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.8 }}*/
-        className="flex justify-center mt-16 md:mt-24"
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="flex justify-center mt-16 md:mt-24"*/
       >
         {/*<button
           onClick={() =>
