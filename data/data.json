@@ -427,6 +427,18 @@
   },
   "articles": [
     {
+      "id": 14,
+      "title": "Generating Text with Neural Networks: from Bigram to Mini-GPT",
+      "image": "/articles/covers/makemore.png",
+      "description": " I built several character-level text generation models using PyTorch.",
+      "mdLink": "articles/makemore.md",
+      "gitHubLink": "https://github.com/darlantane/makemore",
+      "date": "2026-05-03",
+      "author": "Darlan Tane",
+      "readingTime": "8 min",
+      "relatedArticleIds": [12, 13]
+    },
+    {
       "id": 13,
       "title": "Understanding Neural Networks from Scratch with Micrograd",
       "image": "/articles/covers/micrograd.png",
@@ -436,7 +448,7 @@
       "date": "2026-04-21",
       "author": "Darlan Tane",
       "readingTime": "7 min",
-      "relatedArticleIds": [8, 9]
+      "relatedArticleIds": [12, 14]
     },
     {
       "id": 12,
@@ -448,7 +460,7 @@
       "date": "2025-07-28",
       "author": "Darlan Tane",
       "readingTime": "7 min",
-      "relatedArticleIds": [10, 11]
+      "relatedArticleIds": [11, 13]
     },
     {
       "id": 11,
