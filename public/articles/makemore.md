@@ -400,7 +400,7 @@ The Transformer captures global relationships within the sequence.
 
 ## 8. What this project helps us understand
 
-- Language modeling: Predicting the next character = the foundation of LLMs
+- Language modeling: Predicting the next character, the foundation of LLMs
 
 - Embeddings: Characters are represented as continuous vectors.
 
@@ -417,7 +417,7 @@ The Transformer captures global relationships within the sequence.
 
 ## Conclusion
 
-This project demonstrates one essential point: a language model = a model that predicts the next token
+This project demonstrates one essential point: a language model is a model that predicts the next token
 
 From Bigrams to Transformers:
 
