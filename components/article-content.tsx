@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
-import rehypeHighlight from "rehype-highlight";
-import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import CodeBlock from "./codeblock";
 
 interface ArticleContentProps {
   mdLink: string;
@@ -57,11 +56,13 @@ export default function ArticleContent({ mdLink }: ArticleContentProps) {
   }
 
   return (
-    <div className="prose prose-lg max-w-none text-black prose-headings:text-black prose-a:text-black">
+    <div className="prose prose-lg max-w-none">
       <ReactMarkdown
-        rehypePlugins={[rehypeHighlight, rehypeRaw]}
         remarkPlugins={[remarkGfm]}
-      >
+        components={{
+        code: CodeBlock 
+      }}
+        >
         {content}
       </ReactMarkdown>
     </div>
