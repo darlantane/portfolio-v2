@@ -24,7 +24,7 @@ export default function CodeBlock({ children, className, inline }: any) {
       try {
         const html = await codeToHtml(code, {
           lang: language,
-          theme: 'poimandres',
+          theme: 'nord',
         });
         setHighlightedHtml(html);
       } catch (error) {
